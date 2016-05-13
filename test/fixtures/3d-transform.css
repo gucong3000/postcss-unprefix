@@ -7,5 +7,5 @@ b {
 }
 em {
 	-ms-transform: rotate(45deg);
-	-o-transform: rotateZ(45deg);
+	-o-transform: rotate(45deg);
 }

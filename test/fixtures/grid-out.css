@@ -1,27 +1,27 @@
 .a {
 	grid-template-columns: auto 1fr;
-	-ms-grid-columns: auto 1fr;
-	-ms-grid-column-align: stretch;
+	grid-columns: auto 1fr;
+	grid-column-align: stretch;
 	grid-row-align: stretch;
 	grid-column-start: 1;
 	grid-column: 1;
 	grid-column-end: span 3;
-	-ms-grid-column-span: 3;
+	grid-column-span: 3;
 }
 
 .b {
 	grid-template-rows: 10px repeat(4, 250px 10px) 20px;
-	-ms-grid-rows: 10px (250px 10px)[4] 20px;
+	grid-rows: 10px (250px 10px)[4] 20px;
 	grid-row-align: stretch;
 	grid-row-start: 1;
 	grid-row: 1;
 	grid-row-end: span 3;
-	-ms-grid-row-span: 3;
+	grid-row-span: 3;
 }
 
 .c {
 	grid-column: 1 / span 3;
-	grid-column: 1;
+	grid-column-span: 3;
 }
 
 .webkit {
@@ -32,7 +32,6 @@
 }
 
 .unknown {
-	align-items: start;
 	align-items: flex-start;
 	grid-row-align: start;
 }

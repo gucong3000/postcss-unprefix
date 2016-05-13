@@ -8,12 +8,12 @@ function process(css, postcssOpts) {
 	var processors = [
 		require("postcss-gradientfixer"),
 		require("postcss-flexboxfixer"),
-		require(".."),
 		require("autoprefixer")({
 			remove: true,
 			add: false,
 			browsers: []
-		})
+		}),
+		require(".."),
 	];
 	postcssOpts = postcssOpts || {};
 	return postcss(processors).process(css, postcssOpts).css;
@@ -26,14 +26,16 @@ files = files.filter(function(filename) {
 });
 describe("fixtures", function() {
 
+	var allRight = true;
+
 	files.forEach(function(filename) {
+
 		var testName = filename.replace(/\.\w+$/, "");
 		var inputFile = "./test/fixtures/" + filename;
 		var input = fs.readFileSync(inputFile).toString();
 		var output = "";
 		try {
 			output = fs.readFileSync("./test/fixtures/" + testName + "-out.css").toString();
-
 		} catch (ex) {
 
 		}
@@ -41,12 +43,19 @@ describe("fixtures", function() {
 			form: inputFile
 		});
 
-		// if (real !== input && real !== output) {
-		// 	fs.writeFileSync("./test/fixtures/" + testName + "-out.css", real);
-		// }
+		if (allRight) {
+			it(testName, function() {
+				assert.equal(real, output);
+			});
+		}
 
-		it(testName, function() {
-			assert.equal(real, output);
-		});
+		if (input === real) {
+			console.error(inputFile);
+		}
+
+		if (real !== output) {
+			allRight = false;
+			return false;
+		}
 	});
 });

@@ -6,8 +6,6 @@ a {
 	-webkit-order: 0;
 	-moz-box-ordinal-group: 1;
 	-ms-flex-order: 0;
-	flex: 0 auto;
-	flex: 0 1 2 auto;
 	-moz-box-flex: 0;
 	-ms-flex: 0 1 2;
 	-webkit-transition: -webkit-box-flex 200ms, -webkit-flex 200ms;
@@ -17,24 +15,18 @@ a {
 	-ms-flex-item-align: auto;
 	-webkit-align-content: stretch;
 	-ms-flex-line-pack: stretch;
-	flex: 1 auto;
-	flex: auto auto;
 	-moz-box-flex: 1;
 	-ms-flex: auto;
 }
 
 .a {
-	flex-direction: row;
-	flex-direction: row;
 	-webkit-flex-direction: row;
 	-moz-box-orient: horizontal;
 	-moz-box-direction: normal;
 	-ms-flex-direction: row;
-	justify-content: flex-start;
 	-webkit-justify-content: flex-start;
 	-moz-box-pack: start;
 	-ms-flex-pack: start;
-	align-items: flex-start;
 	-webkit-align-items: flex-start;
 	-moz-box-align: start;
 	-ms-flex-align: start;
@@ -44,23 +36,17 @@ a {
 	-ms-flex-line-pack: start;
 	-webkit-align-self: flex-start;
 	-ms-flex-item-align: start;
-	flex: 0 auto;
-	flex: none auto;
 	-moz-box-flex: 0;
 	-ms-flex: none;
 }
 .b {
-	flex-direction: row;
-	flex-direction: row-reverse;
 	-webkit-flex-direction: row-reverse;
 	-moz-box-orient: horizontal;
 	-moz-box-direction: reverse;
 	-ms-flex-direction: row-reverse;
-	justify-content: flex-end;
 	-webkit-justify-content: flex-end;
 	-moz-box-pack: end;
 	-ms-flex-pack: end;
-	align-items: flex-end;
 	-webkit-align-items: flex-end;
 	-moz-box-align: end;
 	-ms-flex-align: end;
@@ -74,8 +60,6 @@ a {
 	-ms-flex-negative: 1;
 }
 .c {
-	flex-direction: column;
-	flex-direction: row;
 	-webkit-flex-direction: column;
 	-moz-box-orient: vertical;
 	-moz-box-direction: normal;
@@ -98,13 +82,10 @@ a {
 	-ms-flex-preferred-size: auto;
 }
 .e {
-	flex-direction: column;
-	flex-direction: row-reverse;
 	-webkit-flex-direction: column-reverse;
 	-moz-box-orient: vertical;
 	-moz-box-direction: reverse;
 	-ms-flex-direction: column-reverse;
-	justify-content: space-between;
 	-webkit-justify-content: space-between;
 	-moz-box-pack: justify;
 	-ms-flex-pack: justify;
@@ -130,8 +111,6 @@ a {
 	-ms-flex-item-align: stretch;
 }
 .g {
-	flex: calc(1em + 1px) auto;
-	flex: calc(1em + 1px) 0 0 auto;
 	-moz-box-flex: calc(1em + 1px);
 	-ms-flex: calc(1em + 1px) 0 0;
 }
