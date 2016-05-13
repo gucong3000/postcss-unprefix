@@ -1,0 +1,7 @@
+@supports
+  ((cursor: -webkit-grab) or (cursor: grab)) or
+  not ((-webkit-mask: none) or (mask: none)) and
+  (color: black) {
+	a {
+	}
+}

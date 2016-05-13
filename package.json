@@ -1,0 +1,59 @@
+{
+  "name": "postcss-clean-prefixes",
+  "version": "0.0.1",
+  "description": "makes IE several of the most useful CSS3 decoration features",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "tape test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gucong3000/postcss-pie.git"
+  },
+  "keywords": [
+    "border-image",
+    "border-radius",
+    "box-shadow",
+    "css",
+    "css3",
+    "gradient",
+    "ie",
+    "pie",
+    "postcss",
+    "postcss-plugin"
+  ],
+  "author": "gucong",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gucong3000/postcss-pie/issues"
+  },
+  "homepage": "https://github.com/gucong3000/postcss-pie#readme",
+  "dependencies": {
+    "autoprefixer": "^6.3.6",
+    "postcss": "^5.0.19",
+    "postcss-flexboxfixer": "^0.0.5",
+    "postcss-gradientfixer": "^0.0.6"
+  },
+  "devDependencies": {
+    "mocha": "^2.4.5"
+  },
+  "keywords": [
+    "postcss",
+    "prefix",
+    "clear",
+    "remove"
+  ],
+  "scripts": {
+    "test": "mocha",
+    "coveralls": "npm run test-cov && coveralls < coverage/lcov.info",
+    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/gucong3000/postcss-clean-prefixes#readme"
+}

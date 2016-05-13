@@ -1,0 +1,8 @@
+.mask {
+	mask: linear-gradient(white, black);
+}
+
+.newline {
+	background-image: linear-gradient( white, black ),
+	linear-gradient( black, white );
+}

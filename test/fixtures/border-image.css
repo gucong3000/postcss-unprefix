@@ -1,0 +1,4 @@
+a {
+	-o-border-image: -o-linear-gradient(black, white) 20% stretch stretch;
+}
+

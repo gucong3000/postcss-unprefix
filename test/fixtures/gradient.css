@@ -1,0 +1,8 @@
+.mask {
+	-webkit-mask: -webkit-linear-gradient(white, black);
+}
+
+.newline {
+	background-image: -o-linear-gradient( white, black ),
+	-o-linear-gradient( black, white );
+}

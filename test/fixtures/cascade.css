@@ -1,0 +1,9 @@
+a {
+	flex-direction: row;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+	-moz-box-orient: horizontal;
+	-moz-box-direction: normal;
+	-ms-flex-direction: row;
+	-webkit-mask: none;
+}

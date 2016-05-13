@@ -1,0 +1,15 @@
+a {
+	-webkit-text-emphasis-position: over;
+}
+
+em {
+	-webkit-text-emphasis-position: under;
+}
+
+.reverse {
+	-webkit-text-emphasis-position: over;
+}
+
+.wrong {
+	-webkit-text-emphasis-position: over;
+}

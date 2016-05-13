@@ -1,0 +1,16 @@
+a {
+	width: fill;
+}
+
+b {
+	height: max-content;
+}
+
+p {
+	block-size: min-content;
+	min-inline-size: fit-content;
+}
+
+.old {
+	width: fill-available;
+}

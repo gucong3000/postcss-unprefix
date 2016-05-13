@@ -1,0 +1,12 @@
+.one {
+	-webkit-writing-mode: horizontal-tb;
+	-ms-writing-mode: lr-tb;
+}
+.two {
+	-webkit-writing-mode: vertical-rl;
+	-ms-writing-mode: tb-rl;
+}
+.three {
+	-webkit-writing-mode: vertical-lr;
+	-ms-writing-mode: tb-lr;
+}

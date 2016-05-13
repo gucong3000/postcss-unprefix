@@ -1,0 +1,11 @@
+[href=":fullscreen"] {
+	display: inline-block;
+}
+
+:fullscreen a {
+	-moz-box-sizing: border-box;
+}
+
+:fullscreen a {
+	color: black;
+}
