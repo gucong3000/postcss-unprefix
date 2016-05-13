@@ -1,8 +1,8 @@
 a {
 	display: flex;
 	flex-flow: row;
-	box-ordinal-group: 1;
 	order: 0;
+	box-ordinal-group: 1;
 	flex-order: 0;
 	flex: 0 auto;
 	flex: 0 1 2 auto;
@@ -50,11 +50,11 @@ a {
 .c {
 	flex-direction: column;
 	flex-direction: row;
-	box-pack: center;
 	justify-content: center;
+	box-pack: center;
 	flex-pack: center;
-	box-align: center;
 	align-items: center;
+	box-align: center;
 	flex-wrap: reverse-wrap;
 	align-content: center;
 	flex-line-pack: center;
@@ -68,8 +68,8 @@ a {
 	flex-direction: row-reverse;
 	justify-content: space-between;
 	flex-pack: justify;
-	box-align: baseline;
 	align-items: baseline;
+	box-align: baseline;
 	align-content: space-between;
 	flex-line-pack: justify;
 	align-self: baseline;
@@ -78,8 +78,8 @@ a {
 .f {
 	justify-content: space-around;
 	flex-pack: distribute;
-	box-align: stretch;
 	align-items: stretch;
+	box-align: stretch;
 	align-content: space-around;
 	flex-line-pack: distribute;
 	align-self: stretch;
