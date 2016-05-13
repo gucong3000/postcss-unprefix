@@ -1,7 +1,9 @@
 postcss-clean-prefixes
-======
+=====
 
-[![Build Status](https://travis-ci.org/gucong3000/postcss-clean-prefixes/.svg?branch=master)](https://travis-ci.org/gucong3000/postcss-clean-prefixes/)
+[![Build Status](https://travis-ci.org/gucong3000/postcss-clean-prefixes.svg?branch=master)](https://travis-ci.org/gucong3000/postcss-clean-prefixes)
+[![NPM version](https://img.shields.io/npm/v/postcss-clean-prefixes.svg?style=flat-square)](https://www.npmjs.com/package/postcss-clean-prefixes)
+[![Coverage Status](https://img.shields.io/coveralls/gucong3000/postcss-clean-prefixes.svg)](https://coveralls.io/r/gucong3000/postcss-clean-prefixes)
 
 Remove pesky vendor prefixes from your source CSS files. This ensures that your prebuilt CSS is as terse and concise as possible.
 
@@ -22,8 +24,8 @@ var postcss = require("postcss");
 var processors = [
 	require("postcss-gradientfixer"),
 	require("postcss-flexboxfixer"),
-	require("postcss-clean-prefixes"),
 	require("autoprefixer"),
+	require("postcss-clean-prefixes"),
 ];
 
 postcss(processors).process(myCss).css
@@ -33,9 +35,9 @@ postcss(processors).process(myCss).css
 
 ```css
 .flex {
-  display: -webkit-flex;
-  display: -moz-flex;
-  -webkit-flex: 1;
+	display: -webkit-flex;
+	display: -moz-flex;
+	-webkit-flex: 1;
 }
 ```
 
@@ -43,7 +45,7 @@ postcss(processors).process(myCss).css
 
 ```css
 .flex {
-  display: flex;
-  flex: 1;
+	display: flex;
+	flex: 1;
 }
 ```
