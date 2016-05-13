@@ -4,15 +4,16 @@
     "url": "https://github.com/gucong3000/postcss-pie/issues"
   },
   "dependencies": {
-    "autoprefixer": "^6.3.6",
-    "postcss": "^5.0.19",
-    "postcss-flexboxfixer": "^0.0.5",
-    "postcss-gradientfixer": "^0.0.6"
+    "postcss": "^5.0.19"
   },
   "description": "makes IE several of the most useful CSS3 decoration features",
   "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "coveralls": "^2.11.9",
     "istanbul": "^0.4.3",
-    "mocha": "^2.4.5"
+    "mocha": "^2.4.5",
+    "postcss-flexboxfixer": "^0.0.5",
+    "postcss-gradientfixer": "^0.0.6"
   },
   "homepage": "https://github.com/gucong3000/postcss-clean-prefixes#readme",
   "keywords": [
