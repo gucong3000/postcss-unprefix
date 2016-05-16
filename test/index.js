@@ -10,7 +10,6 @@ function process(css, postcssOpts, opts) {
 		require("postcss-flexboxfixer"),
 		require("autoprefixer")({
 			remove: true,
-			add: false,
 			browsers: []
 		}),
 		require("..")(opts),

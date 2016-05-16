@@ -24,7 +24,6 @@ var processors = [
 	require("postcss-flexboxfixer"),
 	require("autoprefixer")({
 		remove: true,
-		add: false,
 		browsers: []
 	}),
 	require("postcss-clean-prefixes"),
