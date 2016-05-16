@@ -5,8 +5,6 @@ postcss-clean-prefixes
 [![NPM version](https://img.shields.io/npm/v/postcss-clean-prefixes.svg?style=flat-square)](https://www.npmjs.com/package/postcss-clean-prefixes)
 [![Coverage Status](https://img.shields.io/coveralls/gucong3000/postcss-clean-prefixes.svg)](https://coveralls.io/r/gucong3000/postcss-clean-prefixes)
 
-Remove pesky vendor prefixes from your source CSS files. This ensures that your prebuilt CSS is as terse and concise as possible.
-
 Though, please use [`autoprefixer`](https://github.com/postcss/autoprefixer) as part of your build process to ensure proper browser support.
 
 ![Gif Deom](http://ww3.sinaimg.cn/bmiddle/534b48acgw1et7jyprmj3g20b40ciaes.gif)

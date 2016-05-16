@@ -3,7 +3,7 @@
 var fs = require("fs");
 var assert = require("assert");
 
-function process(css, postcssOpts) {
+function process(css, postcssOpts, opts) {
 	var postcss = require("postcss");
 	var processors = [
 		require("postcss-gradientfixer"),
@@ -13,9 +13,8 @@ function process(css, postcssOpts) {
 			add: false,
 			browsers: []
 		}),
-		require(".."),
+		require("..")(opts),
 	];
-	postcssOpts = postcssOpts || {};
 	return postcss(processors).process(css, postcssOpts).css;
 }
 
@@ -55,6 +54,7 @@ describe("fixtures", function() {
 
 		if (real !== output) {
 			allRight = false;
+			// fs.writeFileSync("./test/fixtures/" + testName + "-out.css", real);
 			return false;
 		}
 	});
