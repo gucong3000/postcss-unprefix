@@ -6,7 +6,7 @@ a {
 	flex-order: 0;
 	flex: 0 auto;
 	flex: 0 1 2 auto;
-	transition: box-flex 200ms, -webkit-flex 200ms;
+	transition: box-flex 200ms, flex 200ms;
 }
 .inline {
 	align-self: auto;

@@ -22,7 +22,11 @@ var postcss = require("postcss");
 var processors = [
 	require("postcss-gradientfixer"),
 	require("postcss-flexboxfixer"),
-	require("autoprefixer"),
+	require("autoprefixer")({
+		remove: true,
+		add: false,
+		browsers: []
+	}),
 	require("postcss-clean-prefixes"),
 ];
 
