@@ -1,7 +1,7 @@
 {
   "author": "gucong",
   "bugs": {
-    "url": "https://github.com/gucong3000/postcss-pie/issues"
+    "url": "https://github.com/gucong3000/postcss-clean-prefixes/issues"
   },
   "dependencies": {
     "autoprefixer": "^6.3.6",
@@ -27,12 +27,12 @@
   "name": "postcss-clean-prefixes",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gucong3000/postcss-pie.git"
+    "url": "git+https://github.com/gucong3000/postcss-clean-prefixes.git"
   },
   "scripts": {
     "coveralls": "npm run test-cov && coveralls < coverage/lcov.info",
     "test": "mocha",
     "test-cov": "istanbul cover node_modules/mocha/bin/_mocha"
   },
-  "version": "0.1.3"
+  "version": "0.1.4"
 }
