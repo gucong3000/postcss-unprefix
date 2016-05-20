@@ -1,9 +1,9 @@
-postcss-clean-prefixes
+[postcss](https://github.com/postcss/postcss)-unprefix
 =====
 
-[![Build Status](https://travis-ci.org/gucong3000/postcss-clean-prefixes.svg?branch=master)](https://travis-ci.org/gucong3000/postcss-clean-prefixes)
-[![NPM version](https://img.shields.io/npm/v/postcss-clean-prefixes.svg?style=flat-square)](https://www.npmjs.com/package/postcss-clean-prefixes)
-[![Coverage Status](https://img.shields.io/coveralls/gucong3000/postcss-clean-prefixes.svg)](https://coveralls.io/r/gucong3000/postcss-clean-prefixes)
+[![Build Status](https://travis-ci.org/gucong3000/postcss-unprefix.svg?branch=master)](https://travis-ci.org/gucong3000/postcss-unprefix)
+[![NPM version](https://img.shields.io/npm/v/postcss-unprefix.svg?style=flat-square)](https://www.npmjs.com/package/postcss-unprefix)
+[![Coverage Status](https://img.shields.io/coveralls/gucong3000/postcss-unprefix.svg)](https://coveralls.io/r/gucong3000/postcss-unprefix)
 
 Though, please use [`autoprefixer`](https://github.com/postcss/autoprefixer) as part of your build process to ensure proper browser support.
 
@@ -12,7 +12,7 @@ Though, please use [`autoprefixer`](https://github.com/postcss/autoprefixer) as 
 ## Installation
 
 ```bash
-npm install --save postcss-clean-prefixes
+npm install --save postcss-unprefix
 ```
 
 ## Usage
@@ -20,7 +20,7 @@ npm install --save postcss-clean-prefixes
 ```javascript
 var postcss = require("postcss");
 var processors = [
-	require("postcss-clean-prefixes"),
+	require("postcss-unprefix"),
 ];
 
 postcss(processors).process(myCss).css

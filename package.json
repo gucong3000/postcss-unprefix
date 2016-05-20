@@ -1,7 +1,7 @@
 {
   "author": "gucong",
   "bugs": {
-    "url": "https://github.com/gucong3000/postcss-clean-prefixes/issues"
+    "url": "https://github.com/gucong3000/postcss-unprefix/issues"
   },
   "dependencies": {
     "autoprefixer": "^6.3.6",
@@ -9,30 +9,32 @@
     "postcss": "^5.0.19",
     "postcss-value-parser": "^3.3.0"
   },
-  "description": "makes IE several of the most useful CSS3 decoration features",
+  "description": "Clear CSS vendor prefixes from your source.",
   "devDependencies": {
     "coveralls": "^2.11.9",
     "istanbul": "^0.4.3",
     "mocha": "^2.4.5"
   },
-  "homepage": "https://github.com/gucong3000/postcss-clean-prefixes#readme",
+  "homepage": "https://github.com/gucong3000/postcss-unprefix#readme",
   "keywords": [
     "postcss",
     "prefix",
+    "unprefix",
     "clear",
+    "clean",
     "remove"
   ],
   "license": "MIT",
   "main": "./lib/index",
-  "name": "postcss-clean-prefixes",
+  "name": "postcss-unprefix",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gucong3000/postcss-clean-prefixes.git"
+    "url": "git+https://github.com/gucong3000/postcss-unprefix.git"
   },
   "scripts": {
     "coveralls": "npm run test-cov && coveralls < coverage/lcov.info",
     "test": "mocha",
     "test-cov": "istanbul cover node_modules/mocha/bin/_mocha"
   },
-  "version": "0.1.4"
+  "version": "0.1.5"
 }
