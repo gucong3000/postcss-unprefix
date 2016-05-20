@@ -20,12 +20,6 @@ npm install --save postcss-clean-prefixes
 ```javascript
 var postcss = require("postcss");
 var processors = [
-	require("postcss-gradientfixer"),
-	require("postcss-flexboxfixer"),
-	require("autoprefixer")({
-		remove: true,
-		browsers: []
-	}),
 	require("postcss-clean-prefixes"),
 ];
 

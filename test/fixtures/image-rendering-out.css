@@ -1,8 +1,13 @@
+img {
+	image-rendering: crisp-edges;
+}
+
 img.other {
-	interpolation-mode: nearest-neighbor;
+	image-rendering: pixelated;
 }
 
 img.already {
-	interpolation-mode: nearest-neighbor;
+	display: block;
+	image-rendering: crisp-edges;
+	image-rendering: pixelated;
 }
-

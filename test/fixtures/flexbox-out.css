@@ -2,42 +2,36 @@ a {
 	display: flex;
 	flex-flow: row;
 	order: 0;
-	box-ordinal-group: 1;
-	flex-order: 0;
-	flex: 0 auto;
-	flex: 0 1 2 auto;
-	transition: box-flex 200ms, flex 200ms;
+	order: 1;
+	flex: none;
+	flex: 0 1 2;
+	transition: flex 200ms;
 }
 .inline {
 	align-self: auto;
 	flex-item-align: auto;
 	align-content: stretch;
 	flex-line-pack: stretch;
-	flex: 1 auto;
-	flex: auto auto;
+	flex: 1;
+	flex: auto;
 }
 
 .a {
 	flex-direction: row;
-	flex-direction: row;
 	justify-content: flex-start;
 	flex-pack: start;
-	align-items: flex-start;
 	align-items: flex-start;
 	flex-wrap: nowrap;
 	align-content: flex-start;
 	flex-line-pack: start;
 	align-self: flex-start;
 	flex-item-align: start;
-	flex: 0 auto;
-	flex: none auto;
+	flex: none;
 }
 .b {
-	flex-direction: row;
 	flex-direction: row-reverse;
 	justify-content: flex-end;
 	flex-pack: end;
-	align-items: flex-end;
 	align-items: flex-end;
 	flex-wrap: wrap;
 	align-content: flex-end;
@@ -48,13 +42,11 @@ a {
 	flex-negative: 1;
 }
 .c {
-	flex-direction: column;
 	flex-direction: row;
+	flex-direction: column;
 	justify-content: center;
-	box-pack: center;
 	flex-pack: center;
 	align-items: center;
-	box-align: center;
 	flex-wrap: reverse-wrap;
 	align-content: center;
 	flex-line-pack: center;
@@ -64,12 +56,11 @@ a {
 	flex-preferred-size: auto;
 }
 .e {
-	flex-direction: column;
 	flex-direction: row-reverse;
+	flex-direction: column-reverse;
 	justify-content: space-between;
 	flex-pack: justify;
 	align-items: baseline;
-	box-align: baseline;
 	align-content: space-between;
 	flex-line-pack: justify;
 	align-self: baseline;
@@ -79,13 +70,12 @@ a {
 	justify-content: space-around;
 	flex-pack: distribute;
 	align-items: stretch;
-	box-align: stretch;
 	align-content: space-around;
 	flex-line-pack: distribute;
 	align-self: stretch;
 	flex-item-align: stretch;
 }
 .g {
-	flex: calc(1em + 1px) auto;
-	flex: calc(1em + 1px) 0 0 auto;
+	flex: calc(1em + 1px);
+	flex: calc(1em + 1px) 0 0;
 }

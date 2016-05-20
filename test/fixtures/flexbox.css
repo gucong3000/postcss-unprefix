@@ -1,5 +1,9 @@
 a {
 	-js-display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
 	-webkit-flex-flow: row;
 	-ms-flex-flow: row;
 	-webkit-box-ordinal-group: 1;

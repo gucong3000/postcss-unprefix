@@ -1,14 +1,14 @@
 .a {
-	column-break-inside: auto;
-	column-break-before: auto;
-	column-break-after: auto;
+	break-inside: auto;
+	break-before: auto;
+	break-after: auto;
 }
 
 .b {
-	column-break-inside: avoid;
+	break-inside: column-avoid;
 }
 
 .c {
-	column-break-inside: avoid;
+	break-inside: column-avoid;
 }
 

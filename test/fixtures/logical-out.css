@@ -1,11 +1,11 @@
 a {
-	margin-before: 1px;
-	margin-start: 1px;
-	padding-end: 1px;
+	margin-block-start: 1px;
+	margin-inline-start: 1px;
+	padding-inline-end: 1px;
 }
 
 .border {
-	border-after: 1px;
-	border-end: 1px;
+	border-block-end: 1px;
+	border-inline-end: 1px;
 }
 

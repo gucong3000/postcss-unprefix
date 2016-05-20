@@ -1,5 +1,5 @@
 .a {
-	flex: 0 auto;
-	flex: 0 auto;
+	flex-grow: 0;
+	flex: none;
 	flex-positive: 0;
 }

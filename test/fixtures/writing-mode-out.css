@@ -1,9 +1,9 @@
 .one {
-	writing-mode: lr-tb;
+	writing-mode: horizontal-tb;
 }
 .two {
-	writing-mode: tb-rl;
+	writing-mode: vertical-rl;
 }
 .three {
-	writing-mode: tb-lr;
+	writing-mode: vertical-lr;
 }

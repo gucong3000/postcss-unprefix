@@ -29,7 +29,7 @@ div {
 .bad {
 	/* safe with different node types */
 	-webkit-transition-property: color, -webkit-filter;
-	-o-transition-property: color, filter;
+	-o-transition-property: color, filter, -js-coverage;
 	-webkit-transition-duration: 1s, 2s;
 	-o-transition-duration: 1s, 2s;
 }

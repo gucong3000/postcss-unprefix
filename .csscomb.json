@@ -5,6 +5,12 @@
 	"color-shorthand": true,
 	"element-case": "lower",
 	"eof-newline": true,
+	"exclude": [
+		".hg/**",
+		".git/**",
+		"node_modules/**",
+		"bower_components/**"
+	],
 	"leading-zero": false,
 	"quotes": "double",
 	"remove-empty-rulesets": true,
@@ -20,6 +26,7 @@
 	"space-before-selector-delimiter": "",
 	"space-between-declarations": "\n",
 	"strip-spaces": true,
-	"tab-size": true,
-	"unitless-zero": true
+	"tab-size": 4,
+	"unitless-zero": true,
+	"vendor-prefix-align": false
 }

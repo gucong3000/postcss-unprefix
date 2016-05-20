@@ -1,5 +1,5 @@
 a {
-	transition: transform 1s, transform 1s;
+	transition: transform 1s;
 }
 b {
 	transform: translateX(45deg);

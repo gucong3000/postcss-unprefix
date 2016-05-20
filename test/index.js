@@ -6,12 +6,6 @@ var assert = require("assert");
 function process(css, postcssOpts, opts) {
 	var postcss = require("postcss");
 	var processors = [
-		require("postcss-gradientfixer"),
-		require("postcss-flexboxfixer"),
-		require("autoprefixer")({
-			remove: true,
-			browsers: []
-		}),
 		require("..")(opts),
 	];
 	return postcss(processors).process(css, postcssOpts).css;
@@ -38,12 +32,13 @@ describe("fixtures", function() {
 
 		}
 		var real = process(input, {
-			form: inputFile
+			from: inputFile,
 		});
+		//.replace(/(\s|,|\()-\w+-/, "$1");
 
 		if (allRight) {
 			it(testName, function() {
-				assert.equal(real, output);
+				assert.equal(output, real);
 			});
 		}
 
