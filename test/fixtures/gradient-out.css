@@ -157,10 +157,10 @@
 }
 
 .radia-test {
-	background-image: radial-gradient(#a7d30c, #019f62 90%, rgba(1,159,98,0)),
-	radial-gradient(#ff5f98, #ff0188 75%, rgba(255,1,136,0)),
-	radial-gradient(#00c9ff, #00b5e2 80%, rgba(0,201,255,0)),
-	radial-gradient(#f4f201, #e4c700 80%, rgba(228, 199,0,0));
+	background-image: radial-gradient(30px at 45px 45px, #a7d30c, #019f62 90%, rgba(1,159,98,0)),
+	radial-gradient(50px at 105px 105px, #ff5f98, #ff0188 75%, rgba(255,1,136,0)),
+	radial-gradient(40px at 95px 15px, #00c9ff, #00b5e2 80%, rgba(0,201,255,0)),
+	radial-gradient(90px at 0 150px, #f4f201, #e4c700 80%, rgba(228, 199,0,0));
 }
 
 .cov-1 {
@@ -177,4 +177,20 @@
 
 .cov-3 {
 	background: linear-gradient(white, black);
+}
+
+.cov-4 {
+	background: radial-gradient(at 0 150px, #f4f201, #e4c700 80%, rgba(228, 199,0,0));
+}
+
+.cov-5 {
+	background: radial-gradient(at 0 150px, #f4f201, #e4c700 80%, rgba(228, 199,0,0));
+}
+
+.cov-6 {
+	background: radial-gradient(at 0 150px, #f4f201, #e4c700 80%, rgba(228, 199,0,0));
+}
+
+.cov-7 {
+	background: radial-gradient(#f4f201, #e4c700 80%, rgba(228, 199,0,0));
 }

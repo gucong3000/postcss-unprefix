@@ -198,3 +198,19 @@
 .cov-3 {
 	background: -webkit-linear-gradient(top, white, black);
 }
+
+.cov-4 {
+	background: -webkit-gradient(radial, 0 150, 50, 0 140, err, from(#f4f201), to(rgba(228, 199,0,0)), color-stop(80%, #e4c700));
+}
+
+.cov-5 {
+	background: -webkit-gradient(radial, 0 150, 50, 0 140, 5err, from(#f4f201), to(rgba(228, 199,0,0)), color-stop(80%, #e4c700));
+}
+
+.cov-6 {
+	background: -webkit-gradient(radial, 0 150, from(#f4f201), to(rgba(228, 199,0,0)), color-stop(80%, #e4c700));
+}
+
+.cov-7 {
+	background: -webkit-gradient(radial, from(#f4f201), to(rgba(228, 199,0,0)), color-stop(80%, #e4c700));
+}
