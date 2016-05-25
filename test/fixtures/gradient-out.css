@@ -1,17 +1,25 @@
-a {
+.a {
 	background: linear-gradient(350.5deg, white, black), linear-gradient(230deg, black, white), linear-gradient(45deg, black, white);
 }
 
-b {
+.b {
 	background-image: linear-gradient(rgba(0,0,0,1), white), linear-gradient(white, black);
 }
 
-strong {
+.strong {
 	background: linear-gradient(to top, transparent, rgba(0, 0, 0, .8) 20px, #000 30px, #000) no-repeat;
 }
 
-div {
-	background-image: radial-gradient(at right, white black), repeating-linear-gradient(to bottom right, black, white), repeating-radial-gradient(at bottom, aqua, red);
+.div1 {
+	background-image: radial-gradient(at right, white, black);
+}
+
+.div2 {
+	background-image: repeating-linear-gradient(to bottom right, black, white);
+}
+
+.div3 {
+	background-image: repeating-radial-gradient(at bottom, aqua, red);
 }
 
 .radial {
@@ -23,7 +31,7 @@ div {
 }
 
 .simple2 {
-	background: linear-gradient(to left, black 0%, rgba(0, 0, 0, .5)50%, white 100%);
+	background: linear-gradient(to left, black 0%, rgba(0, 0, 0, .5) 50%, white 100%);
 }
 
 .simple3 {
@@ -42,8 +50,8 @@ div {
 	background: linear-gradient(to bottom right, black, white);
 }
 
-.radial {
-	background: radial-gradient(0 50%, farthest-side, white, black);
+.radial2 {
+	background: radial-gradient(farthest-side at 0 50%, white, black);
 }
 
 .second {
@@ -59,12 +67,12 @@ div {
 }
 
 .mask {
-	mask: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+	mask: linear-gradient(white, black);
 }
 
 .newline {
-	background-image: linear-gradient( white, black ),
-	linear-gradient( black, white );
+	background-image: linear-gradient(white, black),
+	linear-gradient(black, white);
 }
 
 .convert {
@@ -72,7 +80,7 @@ div {
 }
 
 .rad {
-	background: linear-gradient(to bottom, white, black);
+	background: linear-gradient(white, black);
 }
 
 .turn {
@@ -83,18 +91,74 @@ div {
 	background: linear-gradient(to left, white, black);
 }
 
-.left {
+.left1 {
 	background: linear-gradient(to right, white, black);
 }
 
-.left {
-	background: linear-gradient(89.10000000000002deg, white, black);
+.left2 {
+	background: linear-gradient(to right, white, black);
 }
 
-.left {
-	background: linear-gradient(to left, white, black);
+.left3 {
+	background: linear-gradient(1.4708rad, white, black);
 }
 
-.left {
-	background: linear-gradient(54deg, white, black);
+.left4 {
+	background: linear-gradient(0.15turn, white, black);
+}
+
+.old-simple1 {
+	background: linear-gradient(black, white);
+}
+
+.old-simple2 {
+	background: linear-gradient(270deg, black, rgba(0, 0, 0, .5) 50%, white);
+}
+
+.old-simple3 {
+	background: linear-gradient(270deg, black 50%, white);
+}
+
+.old-simple4 {
+	background: linear-gradient(45deg, black, white);
+}
+
+.old-direction {
+	background: linear-gradient(135deg, black, rgba(0, 0, 0, .5), white);
+}
+
+.old-second {
+	background: red linear-gradient(red, blue);
+}
+
+.old-list {
+	list-style-image: linear-gradient(white, black);
+}
+
+.old-mask {
+	mask: linear-gradient(white, black);
+}
+
+.old-newline {
+	background-image: linear-gradient(white, black),
+	linear-gradient(black, white);
+}
+
+.old-convert {
+	background: linear-gradient(270deg, white, black);
+}
+
+.old-rad {
+	background: linear-gradient(white, black);
+}
+
+.old-norm {
+	background: linear-gradient(270deg, white, black);
+}
+
+.radia-test {
+	background-image: -webkit-gradient(radial, 45 45, 10, 52 50, 30, from(#a7d30c), to(rgba(1,159,98,0)), color-stop(90%, #019f62)),
+	-webkit-gradient(radial, 105 105, 20, 112 120, 50, from(#ff5f98), to(rgba(255,1,136,0)), color-stop(75%, #ff0188)),
+	-webkit-gradient(radial, 95 15, 15, 102 20, 40, from(#00c9ff), to(rgba(0,201,255,0)), color-stop(80%, #00b5e2)),
+	-webkit-gradient(radial, 0 150, 50, 0 140, 90, from(#f4f201), to(rgba(228, 199,0,0)), color-stop(80%, #e4c700));
 }

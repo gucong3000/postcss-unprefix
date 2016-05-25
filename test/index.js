@@ -14,7 +14,7 @@ function process(css, postcssOpts, opts) {
 var files = fs.readdirSync("./test/fixtures");
 
 files = files.filter(function(filename) {
-	return /\.css$/.test(filename) && !/-(?:out|real)\.css$/.test(filename);
+	return /\.css$/.test(filename) && !/-out\.css$/.test(filename);
 });
 describe("fixtures", function() {
 
