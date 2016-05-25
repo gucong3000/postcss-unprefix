@@ -5,7 +5,7 @@
   },
   "dependencies": {
     "autoprefixer": "^6.3.6",
-    "normalize-range": "^0.2.0",
+    "normalize-range": "^0.1.2",
     "postcss": "^5.0.19",
     "postcss-value-parser": "^3.3.0"
   },
@@ -36,5 +36,5 @@
     "test": "mocha",
     "test-cov": "istanbul cover node_modules/mocha/bin/_mocha"
   },
-  "version": "0.1.6"
+  "version": "0.2.1"
 }
