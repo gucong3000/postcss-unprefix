@@ -97,8 +97,8 @@
 }
 
 .rad {
-	background: -webkit-linear-gradient(top, white, black);
-	background: -o-linear-gradient(top, white, black);
+	background: -webkit-linear-gradient(.1rad, white, black);
+	background: -o-linear-gradient(.1rad, white, black);
 }
 
 .turn {
@@ -107,8 +107,8 @@
 }
 
 .norm {
-	background: -webkit-linear-gradient(right, white, black);
-	background: -o-linear-gradient(right, white, black);
+	background: -webkit-linear-gradient(0, white, black);
+	background: -o-linear-gradient(11111deg, white, black);
 }
 
 .left1 {
@@ -120,7 +120,7 @@
 }
 
 .left3 {
-	background: -webkit-linear-gradient(0.1rad, white, black);
+	background: -webkit-linear-gradient(0, white, black);
 }
 
 .left4 {
@@ -128,7 +128,7 @@
 }
 
 .old-simple1 {
-	background: -webkit-gradient(linear, left top, left bottom, from(black), to(white));
+	background: -webkit-gradient(linear, 0 0, 100% 100%, from(black), to(white));
 }
 
 .old-simple2 {
@@ -144,7 +144,7 @@
 }
 
 .old-direction {
-	background: -webkit-gradient(linear, left top, right bottom, from(black), color-stop(rgba(0, 0, 0, .5)), to(white));
+	background: -webkit-gradient(linear, left top, right bottom, from(black), color-stop(50%, rgba(0, 0, 0, .5)), to(white));
 }
 
 .old-second {
@@ -181,4 +181,20 @@
 	-webkit-gradient(radial, 105 105, 20, 112 120, 50, from(#ff5f98), to(rgba(255,1,136,0)), color-stop(75%, #ff0188)),
 	-webkit-gradient(radial, 95 15, 15, 102 20, 40, from(#00c9ff), to(rgba(0,201,255,0)), color-stop(80%, #00b5e2)),
 	-webkit-gradient(radial, 0 150, 50, 0 140, 90, from(#f4f201), to(rgba(228, 199,0,0)), color-stop(80%, #e4c700));
+}
+
+.cov-1 {
+	background: -webkit-gradient(linear, left bottom, left top, color-stop(white, 0));
+}
+
+.cov-2 {
+	background: -webkit-linear-gradient(0err, white, black);
+}
+
+.cov-3 {
+	background: -webkit-linear-gradient(270deg, white, black);
+}
+
+.cov-3 {
+	background: -webkit-linear-gradient(top, white, black);
 }

@@ -80,7 +80,7 @@
 }
 
 .rad {
-	background: linear-gradient(white, black);
+	background: linear-gradient(1.4708rad, white, black);
 }
 
 .turn {
@@ -88,7 +88,7 @@
 }
 
 .norm {
-	background: linear-gradient(to left, white, black);
+	background: linear-gradient(139deg, white, black);
 }
 
 .left1 {
@@ -100,7 +100,7 @@
 }
 
 .left3 {
-	background: linear-gradient(1.4708rad, white, black);
+	background: linear-gradient(to right, white, black);
 }
 
 .left4 {
@@ -108,11 +108,11 @@
 }
 
 .old-simple1 {
-	background: linear-gradient(black, white);
+	background: linear-gradient(135deg, black, white);
 }
 
 .old-simple2 {
-	background: linear-gradient(270deg, black, rgba(0, 0, 0, .5) 50%, white);
+	background: linear-gradient(270deg, black, rgba(0, 0, 0, .5), white);
 }
 
 .old-simple3 {
@@ -157,8 +157,24 @@
 }
 
 .radia-test {
-	background-image: -webkit-gradient(radial, 45 45, 10, 52 50, 30, from(#a7d30c), to(rgba(1,159,98,0)), color-stop(90%, #019f62)),
-	-webkit-gradient(radial, 105 105, 20, 112 120, 50, from(#ff5f98), to(rgba(255,1,136,0)), color-stop(75%, #ff0188)),
-	-webkit-gradient(radial, 95 15, 15, 102 20, 40, from(#00c9ff), to(rgba(0,201,255,0)), color-stop(80%, #00b5e2)),
-	-webkit-gradient(radial, 0 150, 50, 0 140, 90, from(#f4f201), to(rgba(228, 199,0,0)), color-stop(80%, #e4c700));
+	background-image: radial-gradient(#a7d30c, #019f62 90%, rgba(1,159,98,0)),
+	radial-gradient(#ff5f98, #ff0188 75%, rgba(255,1,136,0)),
+	radial-gradient(#00c9ff, #00b5e2 80%, rgba(0,201,255,0)),
+	radial-gradient(#f4f201, #e4c700 80%, rgba(228, 199,0,0));
+}
+
+.cov-1 {
+	background: linear-gradient(0, white 0);
+}
+
+.cov-2 {
+	background: linear-gradient(0err, white, black);
+}
+
+.cov-3 {
+	background: linear-gradient(white, black);
+}
+
+.cov-3 {
+	background: linear-gradient(white, black);
 }
