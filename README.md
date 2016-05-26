@@ -20,12 +20,15 @@ npm install --save postcss-unprefix
 ## Usage
 
 ```javascript
-var postcss = require("postcss");
-var processors = [
-	require("postcss-unprefix"),
-];
-
-postcss(processors).process(myCss).css
+var postcss = require("gulp-postcss");
+gulp.task("clear-css", function () {
+	var processors = [
+		require("postcss-unprefix");
+	];
+	return gulp.src("./src/*.css")
+	.pipe(postcss(processors))
+	.pipe(gulp.dest('./dest'));
+});
 ```
 
 #### Input
