@@ -26,8 +26,8 @@
 }
 
 .radial {
-	background: -webkit-radial-gradient(ellipse farthest-corner, black, white);
-	background: -o-radial-gradient(ellipse farthest-corner, black, white);
+	background: -webkit-radial-gradient(ellipse cover, black, white);
+	background: -o-radial-gradient(ellipse cover, black, white);
 }
 
 .simple1 {
@@ -185,10 +185,12 @@
 
 .cov-1 {
 	background: -webkit-gradient(linear, left bottom, left top, color-stop(white, 0));
+	-webkit-mask: -webkit-radial-gradient(white, black);
 }
 
 .cov-2 {
 	background: -webkit-linear-gradient(0err, white, black);
+	-webkit-mask: -webkit-linear-gradient(1err, white, black);
 }
 
 .cov-3 {

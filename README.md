@@ -1,6 +1,8 @@
 [postcss](https://github.com/postcss/postcss)-unprefix
 =====
 
+Unprefixes vendor prefixes in legacy CSS.
+
 [![Build Status](https://travis-ci.org/gucong3000/postcss-unprefix.svg?branch=master)](https://travis-ci.org/gucong3000/postcss-unprefix)
 [![NPM version](https://img.shields.io/npm/v/postcss-unprefix.svg?style=flat-square)](https://www.npmjs.com/package/postcss-unprefix)
 [![Coverage Status](https://img.shields.io/coveralls/gucong3000/postcss-unprefix.svg)](https://coveralls.io/r/gucong3000/postcss-unprefix)

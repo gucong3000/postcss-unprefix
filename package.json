@@ -9,7 +9,7 @@
     "postcss": "^5.0.19",
     "postcss-value-parser": "^3.3.0"
   },
-  "description": "Clear CSS vendor prefixes from your source.",
+  "description": "Unprefixes vendor prefixes in legacy CSS.",
   "devDependencies": {
     "coveralls": "^2.11.9",
     "istanbul": "^0.4.3",
@@ -36,5 +36,5 @@
     "test": "mocha",
     "test-cov": "istanbul cover node_modules/mocha/bin/_mocha"
   },
-  "version": "0.2.1"
+  "version": "0.2.2"
 }

@@ -165,10 +165,12 @@
 
 .cov-1 {
 	background: linear-gradient(0, white 0);
+	mask: radial-gradient(white, black);
 }
 
 .cov-2 {
-	background: linear-gradient(0err, white, black);
+	background: linear-gradient(to right, white, black);
+	mask: linear-gradient(1err, white, black);
 }
 
 .cov-3 {
@@ -180,11 +182,11 @@
 }
 
 .cov-4 {
-	background: radial-gradient(at 0 150px, #f4f201, #e4c700 80%, rgba(228, 199,0,0));
+	background: radial-gradient(err at 0 150px, #f4f201, #e4c700 80%, rgba(228, 199,0,0));
 }
 
 .cov-5 {
-	background: radial-gradient(at 0 150px, #f4f201, #e4c700 80%, rgba(228, 199,0,0));
+	background: radial-gradient(5err at 0 150px, #f4f201, #e4c700 80%, rgba(228, 199,0,0));
 }
 
 .cov-6 {
