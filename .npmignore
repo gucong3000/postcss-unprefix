@@ -1,14 +1,14 @@
 *.log
 *.pid
 *.seed
-.csscomb.json
+.editorconfig
+.eslintrc*
 .gitignore
 .grunt
-.jshintrc
 .lock-wscript
 .node_repl_history
+.stylelintrc*
 .travis.yml
-build
 coverage
 gulpfile.js
 lib-cov
