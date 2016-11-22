@@ -4,16 +4,16 @@
     "url": "https://github.com/gucong3000/postcss-unprefix/issues"
   },
   "dependencies": {
-    "autoprefixer": "^6.3.6",
+    "autoprefixer": "^6.5.3",
     "normalize-range": "^0.1.2",
-    "postcss": "^5.0.19",
+    "postcss": "^5.2.5",
     "postcss-value-parser": "^3.3.0"
   },
   "description": "Unprefixes vendor prefixes in legacy CSS.",
   "devDependencies": {
-    "coveralls": "^2.11.9",
-    "istanbul": "^0.4.3",
-    "mocha": "^2.4.5"
+    "coveralls": "^2.11.15",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.1.2"
   },
   "homepage": "https://github.com/gucong3000/postcss-unprefix#readme",
   "keywords": [
