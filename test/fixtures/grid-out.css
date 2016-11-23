@@ -24,7 +24,7 @@
 }
 
 .webkit {
-	grid: subgrid;
+	-webkit-grid: subgrid;
 	grid-template-areas: "head head"
 	"nav  main"
 	"foot ....";
