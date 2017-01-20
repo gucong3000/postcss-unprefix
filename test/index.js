@@ -1,5 +1,6 @@
 "use strict";
-/* global describe, it */
+var describe = require("mocha").describe;
+var it = require("mocha").it;
 var fs = require("fs");
 var assert = require("assert");
 

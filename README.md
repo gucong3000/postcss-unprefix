@@ -3,8 +3,9 @@
 
 Unprefixes vendor prefixes in legacy CSS.
 
-[![Build Status](https://travis-ci.org/gucong3000/postcss-unprefix.svg?branch=master)](https://travis-ci.org/gucong3000/postcss-unprefix)
 [![NPM version](https://img.shields.io/npm/v/postcss-unprefix.svg?style=flat-square)](https://www.npmjs.com/package/postcss-unprefix)
+[![Travis](https://img.shields.io/travis/gucong3000/postcss-unprefix.svg?&label=Linux)](https://travis-ci.org/gucong3000/postcss-unprefix)
+[![AppVeyor](https://img.shields.io/appveyor/ci/gucong3000/postcss-unprefix.svg?&label=Windows)](https://ci.appveyor.com/project/gucong3000/postcss-unprefix)
 [![Coverage Status](https://img.shields.io/coveralls/gucong3000/postcss-unprefix.svg)](https://coveralls.io/r/gucong3000/postcss-unprefix)
 
 Though, please use [`autoprefixer`](https://github.com/postcss/autoprefixer) as part of your build process to ensure proper browser support.
