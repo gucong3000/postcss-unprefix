@@ -4,7 +4,7 @@
     "url": "https://github.com/gucong3000/postcss-unprefix/issues"
   },
   "dependencies": {
-    "autoprefixer": "^6.6.1",
+    "autoprefixer": "^6.7.2",
     "normalize-range": "^0.1.2",
     "postcss": "^5.2.11",
     "postcss-value-parser": "^3.3.0"
