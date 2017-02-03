@@ -1,6 +1,5 @@
 a {
 	display: flex;
-	flex-flow: row;
 	order: 0;
 	order: 1;
 	flex: none;
@@ -17,7 +16,6 @@ a {
 }
 
 .a {
-	flex-direction: row;
 	justify-content: flex-start;
 	flex-pack: start;
 	align-items: flex-start;
@@ -29,7 +27,6 @@ a {
 	flex: none;
 }
 .b {
-	flex-direction: row-reverse;
 	justify-content: flex-end;
 	flex-pack: end;
 	align-items: flex-end;
@@ -42,8 +39,6 @@ a {
 	flex-negative: 1;
 }
 .c {
-	flex-direction: row;
-	flex-direction: column;
 	justify-content: center;
 	flex-pack: center;
 	align-items: center;
@@ -56,8 +51,6 @@ a {
 	flex-preferred-size: auto;
 }
 .e {
-	flex-direction: row-reverse;
-	flex-direction: column-reverse;
 	justify-content: space-between;
 	flex-pack: justify;
 	align-items: baseline;
