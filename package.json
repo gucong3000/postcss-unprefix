@@ -6,7 +6,7 @@
   "dependencies": {
     "autoprefixer": "^6.7.5",
     "normalize-range": "^0.1.2",
-    "postcss": "^5.2.11",
+    "postcss": "^5.2.16",
     "postcss-value-parser": "^3.3.0"
   },
   "description": "Unprefixes vendor prefixes in legacy CSS.",
