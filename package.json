@@ -14,9 +14,12 @@
     "cover": "^0.2.9",
     "coveralls": "^2.13.0",
     "eslint": "^3.19.0",
-    "istanbul": "^0.4.5",
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-stylefmt": "^1.1.0",
     "mocha": "^3.2.0",
-    "node-version-check": "^2.1.1"
+    "node-version-check": "^2.1.1",
+    "nyc": "^10.2.0"
   },
   "homepage": "https://github.com/gucong3000/postcss-unprefix#readme",
   "keywords": [
@@ -35,10 +38,9 @@
     "url": "git+https://github.com/gucong3000/postcss-unprefix.git"
   },
   "scripts": {
-    "coveralls": "npm run test-cov && coveralls < coverage/lcov.info",
-    "lint": "node-version-gte-4 && eslint . || echo \"ESLint not supported\"",
-    "test": "npm run lint && mocha",
-    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha"
+    "coveralls": "npm run test && coveralls < coverage/lcov.info",
+    "pretest": "node-version-gte-4 && eslint . || echo \"ESLint not supported\"",
+    "test": "mocha"
   },
   "version": "1.2.0"
 }

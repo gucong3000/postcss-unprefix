@@ -1,0 +1,10 @@
+a {
+	/* transition */
+	transition: all 1s;
+	height: calc(100% - 10px);
+}
+
+/* placeholder */
+
+::placeholder {
+}

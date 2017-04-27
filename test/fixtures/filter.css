@@ -1,12 +1,5 @@
 a {
 	-webkit-filter: blur(10px);
-	-webkit-transition: -webkit-filter 2s;
-	transition: -webkit-filter 2s;
-	transition: filter 2s, -webkit-filter 2s;
-}
-
-a {
-	-webkit-filter: blur(10px);
 	filter: blur(10px);
 	-webkit-transition: -webkit-filter 2s;
 	transition: -webkit-filter 2s;
@@ -20,10 +13,6 @@ div {
 
 b {
 	filter: alpha(opacity=100);
-}
-
-b {
-	-ms-filter: alpha(opacity=100);
 }
 
 em {

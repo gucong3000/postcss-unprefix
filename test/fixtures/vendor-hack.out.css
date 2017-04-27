@@ -1,0 +1,11 @@
+.a {
+	transform: scale(.9999);
+}
+
+.b {
+	transform: scale(.9999);
+}
+
+.c {
+	transform: scale(1);
+}

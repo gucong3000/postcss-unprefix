@@ -15,7 +15,7 @@ function process(css, postcssOpts, opts) {
 var files = fs.readdirSync("./test/fixtures");
 
 files = files.filter(function(filename) {
-	return /\.css$/.test(filename) && !/-out\.css$/.test(filename);
+	return /\.css$/.test(filename) && !/\.out\.css$/.test(filename);
 });
 describe("fixtures", function() {
 
@@ -28,7 +28,7 @@ describe("fixtures", function() {
 		var input = fs.readFileSync(inputFile).toString();
 		var output = "";
 		try {
-			output = fs.readFileSync("./test/fixtures/" + testName + "-out.css").toString();
+			output = fs.readFileSync("./test/fixtures/" + testName + ".out.css").toString();
 		} catch (ex) {
 
 		}
@@ -49,7 +49,7 @@ describe("fixtures", function() {
 
 		if (real !== output) {
 			allRight = false;
-			// fs.writeFileSync("./test/fixtures/" + testName + "-out.css", real);
+			fs.writeFileSync("./test/fixtures/" + testName + ".out.css", real);
 			return false;
 		}
 	});

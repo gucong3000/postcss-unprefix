@@ -1,0 +1,8 @@
+a {
+	flex-direction: row;
+	mask: none;
+}
+
+b {
+	mask: none;
+}

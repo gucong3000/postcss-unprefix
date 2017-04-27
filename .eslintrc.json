@@ -23,6 +23,10 @@
 				"before": false
 			}
 		],
+		"comma-dangle": [
+			"error",
+			"always-multiline"
+		],
 		"eqeqeq": [
 			"error",
 			"smart"
@@ -34,36 +38,33 @@
 				"SwitchCase": 1
 			}
 		],
+		"key-spacing": [
+			"error"
+		],
 		"keyword-spacing": [
-			"error",
-			{
-				"after": true,
-				"before": true
-			}
+			"error"
+		],
+		"no-var": [
+			"error"
 		],
 		"no-console": [
-			"error",
-			{
-			}
+			"error"
+		],
+		"prefer-const": [
+			"error"
 		],
 		"quotes": [
 			"error",
-			"double",
-			{
-				"allowTemplateLiterals": true,
-				"avoidEscape": true
-			}
+			"single"
 		],
 		"semi": [
-			"error",
-			"always",
-			{
-				"omitLastInOneLineBlock": false
-			}
+			"error"
+		],
+		"space-before-function-paren": [
+			"error"
 		],
 		"space-before-blocks": [
-			"error",
-			"always"
+			"error"
 		],
 		"space-infix-ops": [
 			"error"

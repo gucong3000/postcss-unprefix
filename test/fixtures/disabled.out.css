@@ -1,0 +1,36 @@
+a {
+	border-radius: 4px;
+	mask: none;
+}
+
+b {
+	/* autoprefixer: off */
+	border-radius: 4px;
+	mask: none;
+}
+
+.loud {
+	/*! autoprefixer: off */
+	border-radius: 4px;
+	mask: none;
+}
+
+.case {
+	/*autoprefixer:OFF*/
+	border-radius: 4px;
+	mask: none;
+}
+
+@support (transition: 1s) {
+	/* autoprefixer: off */
+	:fullscreen {
+		border-radius: 4px;
+		mask: none;
+	}
+
+	::placeholder {
+		/*autoprefixer: on*/
+		border-radius: 4px;
+		mask: none;
+	}
+}
