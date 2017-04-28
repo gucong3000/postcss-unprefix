@@ -21,6 +21,8 @@ describe("fixtures", function() {
 
 	var allRight = true;
 
+	// files = ["grid.css"]
+
 	files.forEach(function(filename) {
 
 		var testName = filename.replace(/\.\w+$/, "");
@@ -35,7 +37,6 @@ describe("fixtures", function() {
 		var real = process(input, {
 			from: inputFile,
 		});
-		//.replace(/(\s|,|\()-\w+-/, "$1");
 
 		if (allRight) {
 			it(testName, function() {
