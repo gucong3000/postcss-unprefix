@@ -1,18 +1,24 @@
 .a {
+	page-break-inside: auto;
 	break-inside: auto;
+	page-break-before: auto;
 	break-before: auto;
+	page-break-after: auto;
 	break-after: auto;
 }
 
 .b {
+	page-break-inside: avoid;
 	break-inside: avoid;
 }
 
 .c {
+	page-break-inside: avoid;
 	break-inside: avoid-column;
 }
 
 .d {
+	page-break-inside: avoid;
 	break-inside: avoid-page;
 }
 

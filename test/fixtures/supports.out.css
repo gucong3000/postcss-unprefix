@@ -6,7 +6,7 @@
 	}
 }
 
-@supports not (display: flex) {
+@supports not ((display: -webkit-flex) or (display: flex)) {
 	a {
 		color: #000;
 	}
