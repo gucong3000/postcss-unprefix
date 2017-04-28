@@ -9,7 +9,6 @@
 	align-self: stretch;
 	-ms-grid-column: 1;
 	grid-column-start: 1;
-	-ms-grid-column-span: 3;
 	grid-column-end: span 3;
 }
 
@@ -22,12 +21,10 @@
 	align-self: stretch;
 	-ms-grid-row: 1;
 	grid-row-start: 1;
-	-ms-grid-row-span: 3;
 	grid-row-end: span 3;
 }
 
 .c {
-	-ms-grid-column-span: 3;
 	-ms-grid-column: 1;
 	grid-column: 1 / span 3;
 }
