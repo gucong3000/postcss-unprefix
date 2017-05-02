@@ -48,7 +48,13 @@
 			"error"
 		],
 		"no-console": [
-			"error"
+			"error",
+			{
+				"allow": [
+					"warn",
+					"error"
+				]
+			}
 		],
 		"prefer-const": [
 			"error"

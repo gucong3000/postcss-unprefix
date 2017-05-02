@@ -20,6 +20,7 @@
     "mocha": "^3.2.0",
     "node-version-check": "^2.1.1",
     "nyc": "^10.2.0",
+    "postcss-reporter": "^3.0.0",
     "stylelint": "^7.10.1"
   },
   "homepage": "https://github.com/gucong3000/postcss-unprefix#readme",
@@ -41,8 +42,7 @@
   "scripts": {
     "coveralls": "npm run test && coveralls < coverage/lcov.info",
     "eslint": "node-version-gte-4 && eslint . || echo \"ESLint not supported\"",
-    "stylelint": "stylelint test/fixtures/**/*.out.css",
-    "pretest": "npm run eslint && npm run stylelint",
+    "pretest": "npm run eslint",
     "test": "mocha"
   },
   "version": "1.2.0"
