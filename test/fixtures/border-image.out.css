@@ -1,3 +1,7 @@
 a {
 	border-image: linear-gradient(black, white) 20% fill stretch stretch;
 }
+
+a {
+	border-image: linear-gradient(black, white) 20% stretch stretch;
+}

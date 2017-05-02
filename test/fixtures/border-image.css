@@ -3,3 +3,7 @@ a {
 	border-image: -webkit-linear-gradient(black, white) 20% fill stretch stretch;
 	border-image: linear-gradient(black, white) 20% fill stretch stretch;
 }
+
+a {
+	-o-border-image: -o-linear-gradient(black, white) 20% stretch stretch;
+}

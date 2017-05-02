@@ -8,3 +8,8 @@ a {
 
 ::placeholder {
 }
+
+a {
+	/* transition */
+	transition: all 1s;
+}

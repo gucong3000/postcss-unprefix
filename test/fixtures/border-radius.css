@@ -9,3 +9,15 @@ a {
 	-moz-border-radius-bottomright: 3px;
 	border-bottom-right-radius: 3px;
 }
+
+b {
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-bottomright: 3px;
+	-moz-border-radius: 5px;
+}
+
+c {
+	-moz-border-radius: 5px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-bottomright: 3px;
+}

@@ -30,3 +30,17 @@ em {
 		transform: rotate(90deg);
 	}
 }
+
+a {
+	-o-transition: transform 1s, -o-transform 1s;
+}
+
+b {
+	-ms-transform: translateX(45deg);
+	-o-transform: translateX(45deg);
+}
+
+em {
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+}

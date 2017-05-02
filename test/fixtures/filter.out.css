@@ -14,3 +14,7 @@ b {
 em {
 	filter: Alpha(opacity=100);
 }
+
+b {
+	filter: alpha(opacity=100);
+}

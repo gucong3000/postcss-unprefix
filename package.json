@@ -12,14 +12,14 @@
   "description": "Unprefixes vendor prefixes in legacy CSS.",
   "devDependencies": {
     "cover": "^0.2.9",
-    "coveralls": "^2.13.0",
+    "coveralls": "^2.13.1",
     "eslint": "^3.19.0",
     "gulp": "^3.9.1",
     "gulp-rename": "^1.2.2",
     "gulp-stylefmt": "^1.1.0",
-    "mocha": "^3.2.0",
+    "mocha": "^3.3.0",
     "node-version-check": "^2.1.1",
-    "nyc": "^10.2.0",
+    "nyc": "^10.3.0",
     "postcss-reporter": "^3.0.0",
     "stylelint": "^7.10.1"
   },

@@ -5,3 +5,11 @@ a {
 b {
 	appearance: auto;
 }
+
+a {
+	appearance: none;
+}
+
+b {
+	appearance: auto;
+}

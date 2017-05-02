@@ -6,3 +6,8 @@ a {
 b {
 	mask: none;
 }
+
+a {
+	flex-direction: row;
+	mask: none;
+}

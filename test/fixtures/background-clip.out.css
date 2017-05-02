@@ -5,3 +5,11 @@ a {
 b {
 	background-clip: content-box;
 }
+
+a {
+	background-clip: text;
+}
+
+b {
+	background-clip: content-box;
+}

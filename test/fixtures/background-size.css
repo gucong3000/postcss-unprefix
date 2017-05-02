@@ -9,3 +9,8 @@ b {
 	-moz-background-size: contain;
 	background-size: contain;
 }
+
+b {
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+}

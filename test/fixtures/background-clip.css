@@ -6,3 +6,12 @@ a {
 b {
 	background-clip: content-box;
 }
+
+a {
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+}
+
+b {
+	-webkit-background-clip: content-box;
+}

@@ -9,3 +9,13 @@ b {
 	-moz-appearance: auto;
 	appearance: auto;
 }
+
+a {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+b {
+	-webkit-appearance: auto;
+	-moz-appearance: auto;
+}
