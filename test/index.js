@@ -53,7 +53,7 @@ describe('fixtures', function () {
 				real = result.css;
 				assert.equal(output, real);
 			}).catch(ex => {
-				if (ex.name === 'AssertionError') {
+				if (real) {
 					fs.writeFileSync('./test/fixtures/' + testName + '.out.css', real);
 				}
 				throw ex;

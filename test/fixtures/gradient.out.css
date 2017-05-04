@@ -80,5 +80,61 @@ div {
 }
 
 .norm {
+	background: linear-gradient(139deg, white, black);
+}
+
+.left1 {
+	background: linear-gradient(to right, white, black);
+}
+
+.left2 {
+	background: linear-gradient(to right, white, black);
+}
+
+.left3 {
+	background: linear-gradient(to right, white, black);
+}
+
+.left4 {
+	background: linear-gradient(0.15turn, white, black);
+}
+
+.old-simple1 {
+	background: linear-gradient(135deg, black, white);
+}
+
+.old-simple2 {
+	background: linear-gradient(270deg, black, rgba(0, .5), white);
+}
+
+.old-simple3 {
+	background: linear-gradient(270deg, black 50%, white);
+}
+
+.old-simple4 {
+	background: linear-gradient(45deg, black, white);
+}
+
+.old-direction {
+	background: linear-gradient(135deg, black, rgba(0, .5), white);
+}
+
+.old-second {
+	background: red linear-gradient(red, blue);
+}
+
+.old-list {
+	list-style-image: linear-gradient(white, black);
+}
+
+.old-mask {
+	mask: linear-gradient(white, black);
+}
+
+.old-newline {
+	background-image: linear-gradient(white, black), -webkit-gradient(linear, left top, left bottom, from(black), to(white));
+}
+
+.old-convert {
 	background: linear-gradient(-90deg, white, black);
 }

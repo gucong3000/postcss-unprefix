@@ -25,3 +25,18 @@
 .e {
 	break-inside: avoid-region;
 }
+
+.a {
+	break-inside: auto;
+	break-before: auto;
+	break-after: auto;
+}
+
+.b {
+	break-inside: avoid-column;
+}
+
+.c {
+	break-inside: avoid-column;
+}
+

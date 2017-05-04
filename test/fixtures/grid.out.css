@@ -16,6 +16,7 @@
 }
 
 .c {
+	grid-column-start: 1;
 	grid-column: 1 / span 3;
 }
 
@@ -36,4 +37,33 @@
 	.foo {
 		display: grid;
 	}
+}
+
+.a {
+	grid-template-columns: auto 1fr;
+	align-self: stretch;
+	grid-column-start: 1;
+	grid-column-end: span 3;
+}
+
+.b {
+	grid-template-rows: 10px repeat(4, 250px 10px) 20px;
+	align-self: stretch;
+	grid-row-start: 1;
+	grid-row-end: span 3;
+}
+
+.c {
+	grid-column-end: span 3;
+	grid-column-start: 1;
+}
+
+.webkit {
+	-webkit-grid: subgrid;
+	grid-template-areas: "head head" "nav main" "foot ....";
+}
+
+.unknown {
+	align-items: start;
+	align-self: flex-start;
 }

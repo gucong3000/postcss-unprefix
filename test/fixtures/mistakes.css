@@ -3,3 +3,10 @@ a {
 	border-radius: 5px;
 	background: linear-gradient(white, black);
 }
+
+a {
+	-ms-transition: all 1s;
+	-ms-border-radius: 5px;
+	background: -ms-linear-gradient(white, black);
+}
+

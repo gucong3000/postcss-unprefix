@@ -61,3 +61,40 @@ div {
 	transition: 200ms transform;
 	transition: 200ms transform, 200ms -webkit-transform, 200ms -o-transform;
 }
+
+a {
+	-webkit-transition: color 200ms, -webkit-transform 200ms;
+	-o-transition: color 200ms, transform 200ms, -o-transform 200ms;
+	-webkit-transform: rotate(10deg);
+	-o-transform: rotate(10deg);
+}
+
+div {
+	-webkit-transition-property: -webkit-filter;
+	-o-transition-property: filter;
+	-webkit-animation-name: rotating;
+	-o-animation-name: rotating;
+}
+
+.good {
+	-webkit-transition-property: -webkit-filter;
+	-o-transition-property: filter;
+	-webkit-transition-duration: 1s;
+	-o-transition-duration: 1s;
+}
+
+.good2 {
+	-webkit-transition-property: color, -webkit-filter;
+	-o-transition-property: color, filter;
+	-webkit-transition-timing-function: cubic-bezier(.55, 0, .1, 1);
+	-o-transition-timing-function: cubic-bezier(.55, 0, .1, 1);
+}
+
+.bad {
+	/* safe with different node types */
+	-webkit-transition-property: color, -webkit-filter;
+	-o-transition-property: color, filter, -js-coverage;
+	-webkit-transition-duration: 1s, 2s;
+	-o-transition-duration: 1s, 2s;
+}
+

@@ -17,3 +17,19 @@ em {
 	-webkit-text-emphasis-position: over;
 	text-emphasis-position: over;
 }
+
+a {
+	-webkit-text-emphasis-position: over;
+}
+
+em {
+	-webkit-text-emphasis-position: under;
+}
+
+.reverse {
+	-webkit-text-emphasis-position: over;
+}
+
+.wrong {
+	-webkit-text-emphasis-position: over;
+}

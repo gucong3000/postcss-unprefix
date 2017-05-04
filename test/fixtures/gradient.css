@@ -131,6 +131,63 @@ div {
 }
 
 .norm {
+	background: -webkit-linear-gradient(0, white, black);
+	background: -o-linear-gradient(11111deg, white, black);
+}
+
+.left1 {
+	background: -webkit-linear-gradient(0.4deg, white, black);
+}
+
+.left2 {
+	background: -webkit-linear-gradient(0.1grad, white, black);
+}
+
+.left3 {
+	background: -webkit-linear-gradient(0, white, black);
+}
+
+.left4 {
+	background: -webkit-linear-gradient(0.1turn, white, black);
+}
+
+.old-simple1 {
+	background: -webkit-gradient(linear, 0 0, 100% 100%, from(black), to(white));
+}
+
+.old-simple2 {
+	background: -webkit-gradient(linear, right top, left top, from(black), color-stop(50%, rgba(0, 0, 0, .5)), to(white));
+}
+
+.old-simple3 {
+	background: -webkit-gradient(linear, right top, left top, color-stop(50%, black), to(white));
+}
+
+.old-simple4 {
+	background: -webkit-gradient(linear, left bottom, right top, from(black), to(white));
+}
+
+.old-direction {
+	background: -webkit-gradient(linear, left top, right bottom, from(black), color-stop(50%, rgba(0, 0, 0, .5)), to(white));
+}
+
+.old-second {
+	background: red -webkit-gradient(linear, left top, left bottom, from(red), to(blue));
+}
+
+.old-list {
+	list-style-image: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+}
+
+.old-mask {
+	-webkit-mask: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+}
+
+.old-newline {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(black)), -webkit-gradient(linear, left top, left bottom, from(black), to(white));
+}
+
+.old-convert {
 	background: -webkit-gradient(linear, right top, left top, from(white), to(black));
 	background: -webkit-linear-gradient(right, white, black);
 	background: -o-linear-gradient(right, white, black);
