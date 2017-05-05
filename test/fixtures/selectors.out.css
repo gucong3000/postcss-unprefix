@@ -8,3 +8,14 @@
 :fullscreen a {
 	color: black;
 }
+
+@media all {
+	:fullscreen a {
+		color: black;
+	}
+}
+
+p::selection {
+	color: white;
+	background: black;
+}

@@ -13,3 +13,15 @@
 @media all and (min-resolution: 3dppx) {
 }
 
+@media (-webkit-transform-3d) {
+}
+
+@media all and (min-resolution: error) {
+}
+
+@media (-webkit-transform-3d), (min-resolution: 2.5dppx) {
+}
+
+@media (max-width: 1cm), (min-resolution: 2.5dppx) {
+}
+

@@ -90,4 +90,5 @@
 	-webkit-align-items: start;
 	-ms-flex-align: start;
 	-ms-grid-row-align: start;
+	-ms-grid-row-unknown: unknown;
 }

@@ -12,7 +12,7 @@ function process (css, postcssOpts, opts) {
 		require('..')(opts),
 		stylelint,
 		reporter({
-			throwError: true,
+			// throwError: true,
 		}),
 	];
 	return postcss(processors).process(css, postcssOpts);
@@ -21,7 +21,7 @@ function process (css, postcssOpts, opts) {
 let files = fs.readdirSync('./test/fixtures');
 
 files = files.filter(function (filename) {
-	return /\.css$/.test(filename) && !/\.out\.css$/.test(filename);
+	return /\.(?:c|le|sc)ss$/.test(filename) && !/\.out\.\w+$/.test(filename);
 });
 describe('fixtures', function () {
 
@@ -33,10 +33,12 @@ describe('fixtures', function () {
 
 		const testName = filename.replace(/\.\w+$/, '');
 		const inputFile = './test/fixtures/' + filename;
+		const outputFile = inputFile.replace(/\.(\w+)$/, '.out.$1');
+		const syntax = RegExp.$1.toLowerCase();
 		const input = fs.readFileSync(inputFile).toString();
 		let output = '';
 		try {
-			output = fs.readFileSync('./test/fixtures/' + testName + '.out.css').toString();
+			output = fs.readFileSync(outputFile).toString();
 		} catch (ex) {
 			//
 		}
@@ -49,12 +51,13 @@ describe('fixtures', function () {
 			let real;
 			return process(input, {
 				from: inputFile,
+				syntax: syntax === 'css' ? null : require('postcss-'+ syntax),
 			}).then((result) => {
 				real = result.css;
 				assert.equal(output, real);
 			}).catch(ex => {
 				if (real) {
-					fs.writeFileSync('./test/fixtures/' + testName + '.out.css', real);
+					fs.writeFileSync(outputFile, real);
 				}
 				throw ex;
 			});

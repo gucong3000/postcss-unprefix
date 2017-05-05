@@ -66,4 +66,5 @@
 .unknown {
 	align-items: start;
 	align-self: flex-start;
+	-ms-grid-row-unknown: unknown;
 }

@@ -20,6 +20,7 @@
     "mocha": "^3.3.0",
     "node-version-check": "^2.1.1",
     "nyc": "^10.3.0",
+    "postcss-less": "^0.15.0",
     "postcss-reporter": "^3.0.0",
     "stylelint": "^7.10.1"
   },
@@ -35,12 +36,28 @@
   "license": "MIT",
   "main": "./lib/index",
   "name": "postcss-unprefix",
+  "nyc": {
+    "lines": 99,
+    "statements": 99,
+    "functions": 99,
+    "branches": 99,
+    "include": [
+      "lib/**/*.js"
+    ],
+    "reporter": [
+      "lcov",
+      "text"
+    ],
+    "cache": true,
+    "all": true,
+    "check-coverage": true
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gucong3000/postcss-unprefix.git"
   },
   "scripts": {
-    "coveralls": "npm run test && coveralls < coverage/lcov.info",
+    "coveralls": "nyc npm run test && coveralls < coverage/lcov.info",
     "eslint": "node-version-gte-4 && eslint . || echo \"ESLint not supported\"",
     "pretest": "npm run eslint",
     "test": "mocha"

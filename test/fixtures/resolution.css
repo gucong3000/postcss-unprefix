@@ -16,3 +16,21 @@
 @media all and (-o-min-device-pixel-ratio: 3) {
 }
 
+@media (-webkit-transform-3d) {
+}
+
+@media (-o-min-device-pixel-ratio: 5/2), (-webkit-transform-3d) {
+}
+
+@media all and (-o-min-device-pixel-ratio: error) {
+}
+
+@media (-o-min-device-pixel-ratio: 5/2), (-webkit-transform-3d) {
+}
+
+@media (-o-min-device-pixel-ratio: 5/2), (max-width: 1cm) {
+}
+
+@media (-o-min-device-pixel-ratio: 5/2), (max-width: 10mm) {
+}
+

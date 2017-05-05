@@ -10,13 +10,13 @@ b {
 }
 
 .loud {
-	/*! autoprefixer: off */
+	/* ! autoprefixer: off */
 	border-radius: 4px;
 	mask: none;
 }
 
 .case {
-	/*autoprefixer:OFF*/
+	/* autoprefixer:OFF */
 	border-radius: 4px;
 	mask: none;
 }
@@ -29,7 +29,7 @@ b {
 	}
 
 	::placeholder {
-		/*autoprefixer: on*/
+		/* autoprefixer: on */
 		border-radius: 4px;
 		mask: none;
 	}

@@ -189,7 +189,54 @@ div {
 
 .old-convert {
 	background: -webkit-gradient(linear, right top, left top, from(white), to(black));
-	background: -webkit-linear-gradient(right, white, black);
-	background: -o-linear-gradient(right, white, black);
-	background: linear-gradient(-90deg, white, black);
+}
+
+.old-rad {
+	background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+}
+
+.old-norm {
+	background: -webkit-gradient(linear, right top, left top, from(white), to(black));
+}
+
+.radia-test {
+	background-image: -webkit-gradient(radial, 45 45, 10, 52 50, 30, from(#a7d30c), to(rgba(1, 159, 98, 0)), color-stop(90%, #019f62)), -webkit-gradient(radial, 105 105, 20, 112 120, 50, from(#ff5f98), to(rgba(255, 1, 136, 0)), color-stop(75%, #ff0188)), -webkit-gradient(radial, 95 15, 15, 102 20, 40, from(#00c9ff), to(rgba(0, 201, 255, 0)), color-stop(80%, #00b5e2)), -webkit-gradient(radial, 0 150, 50, 0 140, 90, from(#f4f201), to(rgba(228, 199, 0, 0)), color-stop(80%, #e4c700));
+}
+
+.cov-1 {
+	background: -webkit-gradient(linear, left bottom, left top, color-stop(white, 0));
+	-webkit-mask: -webkit-radial-gradient(white, black);
+}
+
+.cov-2 {
+	background: -webkit-linear-gradient(0err, white, black);
+	-webkit-mask: -webkit-linear-gradient(1err, white, black);
+}
+
+.cov-3 {
+	background: -webkit-linear-gradient(270deg, white, black);
+}
+
+.cov-3 {
+	background: -webkit-linear-gradient(top, white, black);
+}
+
+.cov-4 {
+	background: -webkit-gradient(radial, 0 150, 50, 0 140, err, from(#f4f201), to(rgba(228, 199, 0, 0)), color-stop(80%, #e4c700));
+}
+
+.cov-5 {
+	background: -webkit-gradient(radial, 0 150, 50, 0 140, 5err, from(#f4f201), to(rgba(228, 199, 0, 0)), color-stop(80%, #e4c700));
+}
+
+.cov-6 {
+	background: -webkit-gradient(radial, 0 150, from(#f4f201), to(rgba(228, 199, 0, 0)), color-stop(80%, #e4c700));
+}
+
+.cov-7 {
+	background: -webkit-gradient(radial, from(#f4f201), to(rgba(228, 199, 0, 0)), color-stop(80%, #e4c700));
+}
+
+.cov-8 {
+	background: -webkit-radial-gradient(0 50%, contain, white, black);
 }
