@@ -2,7 +2,7 @@
 	display: grid;
 	grid-template-columns: auto 1fr;
 	justify-items: stretch;
-	align-self: stretch;
+	align-items: stretch;
 	grid-column-start: 1;
 	grid-column-end: span 3;
 }
@@ -10,7 +10,7 @@
 .b {
 	display: inline-grid;
 	grid-template-rows: 10px repeat(4, 250px 10px) 20px;
-	align-self: stretch;
+	align-items: stretch;
 	grid-row-start: 1;
 	grid-row-end: span 3;
 }
@@ -25,15 +25,5 @@
 }
 
 .unknown {
-	align-self: start;
-}
-
-.flex {
-	align-self: flex-end;
-}
-
-@supports (display: grid) {
-	.foo {
-		display: grid;
-	}
+	align-items: flex-start;
 }

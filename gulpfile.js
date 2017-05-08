@@ -14,3 +14,13 @@ gulp.task('default', () => {
 	}))
 	.pipe(gulp.dest('./test/fixtures'));
 });
+gulp.task('test', () => {
+	return gulp.src('./test/fixtures.bak/**/*.css')
+	.pipe(stylefmt())
+	.pipe(rename(function (path) {
+		if (/\Wout$/.test(path.basename)) {
+			path.basename = path.basename.replace(/\Wout$/, '.out');
+		}
+	}))
+	.pipe(gulp.dest('./test/fixtures'));
+});

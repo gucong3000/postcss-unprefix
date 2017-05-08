@@ -5,6 +5,7 @@
   },
   "dependencies": {
     "autoprefixer": "^7.0.1",
+    "known-css-properties": "^0.1.0",
     "normalize-range": "^0.1.2",
     "postcss": "^6.0.1",
     "postcss-value-parser": "^3.3.0"
@@ -18,7 +19,6 @@
     "gulp-rename": "^1.2.2",
     "gulp-stylefmt": "^1.1.0",
     "mocha": "^3.3.0",
-    "node-version-check": "^2.1.1",
     "nyc": "^10.3.0",
     "postcss-less": "^0.15.0",
     "postcss-reporter": "^3.0.0",
@@ -58,8 +58,7 @@
   },
   "scripts": {
     "coveralls": "nyc npm run test && coveralls < coverage/lcov.info",
-    "eslint": "node-version-gte-4 && eslint . || echo \"ESLint not supported\"",
-    "pretest": "npm run eslint",
+    "pretest": "eslint .",
     "test": "mocha"
   },
   "version": "1.2.0"

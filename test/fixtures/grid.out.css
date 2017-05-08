@@ -59,7 +59,7 @@
 }
 
 .webkit {
-	-webkit-grid: subgrid;
+	grid: subgrid;
 	grid-template-areas: "head head" "nav main" "foot ....";
 }
 

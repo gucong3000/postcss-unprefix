@@ -12,7 +12,7 @@ function process (css, postcssOpts, opts) {
 		require('..')(opts),
 		stylelint,
 		reporter({
-			// throwError: true,
+			throwError: true,
 		}),
 	];
 	return postcss(processors).process(css, postcssOpts);
@@ -21,7 +21,7 @@ function process (css, postcssOpts, opts) {
 let files = fs.readdirSync('./test/fixtures');
 
 files = files.filter(function (filename) {
-	return /\.(?:c|le|sc)ss$/.test(filename) && !/\.out\.\w+$/.test(filename);
+	return /\.(?:c|le|sc)ss$/.test(filename) && !/\.\w+\.\w+$/.test(filename);
 });
 describe('fixtures', function () {
 
@@ -57,7 +57,7 @@ describe('fixtures', function () {
 				assert.equal(output, real);
 			}).catch(ex => {
 				if (real) {
-					fs.writeFileSync(outputFile, real);
+					fs.writeFileSync(inputFile.replace(/\.(\w+)$/, '.real.$1'), real);
 				}
 				throw ex;
 			});
