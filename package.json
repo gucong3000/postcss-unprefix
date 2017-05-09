@@ -57,7 +57,8 @@
     "url": "git+https://github.com/gucong3000/postcss-unprefix.git"
   },
   "scripts": {
-    "coveralls": "nyc npm run test && coveralls < coverage/lcov.info",
+    "coveralls": "npm run test-cov && coveralls < coverage/lcov.info",
+    "test-cov": "nyc npm test",
     "pretest": "eslint .",
     "test": "mocha"
   },
