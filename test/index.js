@@ -11,9 +11,7 @@ function process (css, postcssOpts, opts) {
 	const processors = [
 		require('..')(opts),
 		stylelint,
-		reporter({
-			throwError: true,
-		}),
+		reporter(),
 	];
 	return postcss(processors).process(css, postcssOpts);
 }
@@ -55,9 +53,10 @@ describe('fixtures', function () {
 			}).then((result) => {
 				real = result.css;
 				assert.equal(output, real);
+				assert.equal(result.messages.length, 0);
 			}).catch(ex => {
 				if (real) {
-					fs.writeFileSync(inputFile.replace(/\.(\w+)$/, '.real.$1'), real);
+					fs.writeFileSync(inputFile.replace(/\.(\w+)$/, '.out.$1'), real);
 				}
 				throw ex;
 			});
