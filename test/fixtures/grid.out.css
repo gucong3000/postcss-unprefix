@@ -16,7 +16,6 @@
 }
 
 .c {
-	grid-column-start: 1;
 	grid-column: 1 / span 3;
 }
 
