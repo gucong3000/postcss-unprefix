@@ -23,9 +23,7 @@ files = files.filter(function (filename) {
 });
 describe('fixtures', function () {
 
-	// const allRight = true;
-
-	// files = ["grid.css"]
+	// files = ["values.css"]
 
 	files.forEach(function (filename) {
 

@@ -16,12 +16,15 @@
 @media (-webkit-transform-3d) {
 }
 
+@media (min-resolution: 2.5dppx), (resolution: 2.5dppx), (-webkit-transform-3d) {
+}
+
 @media all and (min-resolution: error) {
 }
 
-@media (-webkit-transform-3d), (min-resolution: 2.5dppx) {
+@media (min-resolution: 2.5dppx), (-webkit-transform-3d) {
 }
 
-@media (max-width: 1cm), (min-resolution: 2.5dppx) {
+@media (min-resolution: 2.5dppx), (max-width: 1cm) {
 }
 

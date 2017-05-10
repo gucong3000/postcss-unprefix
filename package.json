@@ -39,7 +39,7 @@
   "nyc": {
     "lines": 99,
     "statements": 99,
-    "functions": 99,
+    "functions": 100,
     "branches": 99,
     "include": [
       "lib/**/*.js"
