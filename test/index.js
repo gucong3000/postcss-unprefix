@@ -1,56 +1,63 @@
-"use strict";
-var describe = require("mocha").describe;
-var it = require("mocha").it;
-var fs = require("fs");
-var assert = require("assert");
+'use strict';
+const describe = require('mocha').describe;
+const it = require('mocha').it;
+const fs = require('fs');
+const assert = require('assert');
+const stylelint = require('stylelint');
+const reporter = require('postcss-reporter');
 
-function process(css, postcssOpts, opts) {
-	var postcss = require("postcss");
-	var processors = [
-		require("..")(opts),
+function process (css, postcssOpts, opts) {
+	const postcss = require('postcss');
+	const processors = [
+		require('..')(opts),
+		stylelint,
+		reporter(),
 	];
-	return postcss(processors).process(css, postcssOpts).css;
+	return postcss(processors).process(css, postcssOpts);
 }
 
-var files = fs.readdirSync("./test/fixtures");
+let files = fs.readdirSync('./test/fixtures');
 
-files = files.filter(function(filename) {
-	return /\.css$/.test(filename) && !/-out\.css$/.test(filename);
+files = files.filter(function (filename) {
+	return /\.(?:c|le|sc)ss$/.test(filename) && !/\.\w+\.\w+$/.test(filename);
 });
-describe("fixtures", function() {
+describe('fixtures', function () {
 
-	var allRight = true;
+	// files = ["values.css"]
 
-	files.forEach(function(filename) {
+	files.forEach(function (filename) {
 
-		var testName = filename.replace(/\.\w+$/, "");
-		var inputFile = "./test/fixtures/" + filename;
-		var input = fs.readFileSync(inputFile).toString();
-		var output = "";
+		const testName = filename.replace(/\.\w+$/, '');
+		const inputFile = './test/fixtures/' + filename;
+		const outputFile = inputFile.replace(/\.(\w+)$/, '.out.$1');
+		const syntax = RegExp.$1.toLowerCase();
+		const input = fs.readFileSync(inputFile).toString();
+		let output = '';
 		try {
-			output = fs.readFileSync("./test/fixtures/" + testName + "-out.css").toString();
+			output = fs.readFileSync(outputFile).toString();
 		} catch (ex) {
-
-		}
-		var real = process(input, {
-			from: inputFile,
-		});
-		//.replace(/(\s|,|\()-\w+-/, "$1");
-
-		if (allRight) {
-			it(testName, function() {
-				assert.equal(output, real);
-			});
+			//
 		}
 
-		if (input === real) {
+		if (input === output) {
 			console.error(inputFile);
 		}
 
-		if (real !== output) {
-			allRight = false;
-			// fs.writeFileSync("./test/fixtures/" + testName + "-out.css", real);
-			return false;
-		}
+		it(testName, function () {
+			let real;
+			return process(input, {
+				from: inputFile,
+				syntax: syntax === 'css' ? null : require('postcss-'+ syntax),
+			}).then((result) => {
+				real = result.css;
+				assert.equal(output, real);
+				assert.equal(result.messages.length, 0);
+			}).catch(ex => {
+				if (real) {
+					fs.writeFileSync(inputFile.replace(/\.(\w+)$/, '.out.$1'), real);
+				}
+				throw ex;
+			});
+		});
 	});
 });

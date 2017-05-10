@@ -1,0 +1,31 @@
+a {
+	text-emphasis-position: over left;
+}
+
+em {
+	text-emphasis-position: under right;
+}
+
+.reverse {
+	text-emphasis-position: left over;
+}
+
+.wrong {
+	text-emphasis-position: over;
+}
+
+a {
+	text-emphasis-position: over;
+}
+
+em {
+	text-emphasis-position: under;
+}
+
+.reverse {
+	text-emphasis-position: over;
+}
+
+.wrong {
+	text-emphasis-position: over;
+}

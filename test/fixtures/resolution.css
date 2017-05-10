@@ -1,8 +1,36 @@
-@media (-webkit-min-device-pixel-ratio: 2),
-       (-o-min-device-pixel-ratio: 2/1),
-       (min-resolution: 2dppx),
-       (min-resolution: 192dpi) { }
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx), (min-resolution: 192dpi) {
+}
 
-@media (-webkit-min-device-pixel-ratio: 2.5), (-o-min-device-pixel-ratio: 5/2), (min-resolution: 2.5dppx) { }
+@media (-webkit-min-device-pixel-ratio: 2.5), (-o-min-device-pixel-ratio: 5/2), (min-resolution: 2.5dppx) {
+}
 
-@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi) { }
+@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi) {
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2) {
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 3) {
+}
+
+@media all and (-o-min-device-pixel-ratio: 3) {
+}
+
+@media (-webkit-transform-3d) {
+}
+
+@media (min-resolution: 2.5dppx), (-o-device-pixel-ratio: 5/2),(-o-min-device-pixel-ratio: 5/2), (-webkit-transform-3d) {
+}
+
+@media all and (-o-min-device-pixel-ratio: error) {
+}
+
+@media (-o-min-device-pixel-ratio: 5/2), (-webkit-transform-3d) {
+}
+
+@media (-o-min-device-pixel-ratio: 5/2), (max-width: 1cm) {
+}
+
+@media (-o-min-device-pixel-ratio: 5/2), (max-width: 10mm) {
+}
+

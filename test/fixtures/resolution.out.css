@@ -1,0 +1,30 @@
+@media (min-resolution: 192dpi) {
+}
+
+@media (min-resolution: 2.5dppx) {
+}
+
+@media (min-resolution: 144dpi) {
+}
+
+@media all and (min-resolution: 1.5dppx) {
+}
+
+@media all and (min-resolution: 3dppx) {
+}
+
+@media (-webkit-transform-3d) {
+}
+
+@media (min-resolution: 2.5dppx), (resolution: 2.5dppx), (-webkit-transform-3d) {
+}
+
+@media all and (min-resolution: error) {
+}
+
+@media (min-resolution: 2.5dppx), (-webkit-transform-3d) {
+}
+
+@media (min-resolution: 2.5dppx), (max-width: 1cm) {
+}
+

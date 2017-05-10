@@ -1,9 +1,0 @@
-a {
-	transition: transform 1s;
-}
-b {
-	transform: translateX(45deg);
-}
-em {
-	transform: rotate(45deg);
-}

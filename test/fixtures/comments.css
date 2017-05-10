@@ -2,4 +2,20 @@ a {
 	/* transition */
 	-webkit-transition: all 1s;
 	-o-transition: all 1s;
+	transition: all 1s;
+	height: -webkit-calc(100% - 10px);
+	height: calc(100% - 10px);
+}
+
+/* placeholder */
+::-webkit-input-placeholder {
+}
+
+::placeholder {
+}
+
+a {
+	/* transition */
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
 }

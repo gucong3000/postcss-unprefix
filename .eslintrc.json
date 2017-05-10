@@ -1,81 +1,93 @@
 {
-  "env": {
-    "browser": false,
-    "es6": true,
-    "node": true
-  },
-  "extends": [
-    "eslint:recommended"
-  ],
-  "root": true,
-  "rules": {
-    "arrow-spacing": [
-      "error",
-      {
-        "after": true,
-        "before": true
-      }
-    ],
-    "comma-spacing": [
-      "error",
-      {
-        "after": true,
-        "before": false
-      }
-    ],
-    "indent": [
-      "error",
-      "tab",
-      {
-        "SwitchCase": 1
-      }
-    ],
-    "keyword-spacing": [
-      "error",
-      {
-        "after": true,
-        "before": true
-      }
-    ],
-    "no-console": [
-      "error",
-      {}
-    ],
-    "quotes": [
-      "error",
-      "double",
-      {
-        "allowTemplateLiterals": true,
-        "avoidEscape": true
-      }
-    ],
-    "semi": [
-      "error",
-      "always",
-      {
-        "omitLastInOneLineBlock": false
-      }
-    ],
-    "space-before-blocks": [
-      "error",
-      "always"
-    ],
-    "space-infix-ops": [
-      "error"
-    ],
-    "spaced-comment": [
-      "error",
-      "always"
-    ],
-    "strict": [
-      "error",
-      "safe"
-    ],
-    "valid-jsdoc": [
-      "warn",
-      {
-        "requireReturn": false
-      }
-    ]
-  }
+	"env": {
+		"browser": false,
+		"es6": true,
+		"node": true
+	},
+	"extends": [
+		"eslint:recommended"
+	],
+	"root": true,
+	"rules": {
+		"arrow-spacing": [
+			"error",
+			{
+				"after": true,
+				"before": true
+			}
+		],
+		"comma-spacing": [
+			"error",
+			{
+				"after": true,
+				"before": false
+			}
+		],
+		"comma-dangle": [
+			"error",
+			"always-multiline"
+		],
+		"eqeqeq": [
+			"error",
+			"smart"
+		],
+		"indent": [
+			"error",
+			"tab",
+			{
+				"SwitchCase": 1
+			}
+		],
+		"key-spacing": [
+			"error"
+		],
+		"keyword-spacing": [
+			"error"
+		],
+		"no-var": [
+			"error"
+		],
+		"no-console": [
+			"error",
+			{
+				"allow": [
+					"warn",
+					"error"
+				]
+			}
+		],
+		"prefer-const": [
+			"error"
+		],
+		"quotes": [
+			"error",
+			"single"
+		],
+		"semi": [
+			"error"
+		],
+		"space-before-function-paren": [
+			"error"
+		],
+		"space-before-blocks": [
+			"error"
+		],
+		"space-infix-ops": [
+			"error"
+		],
+		"spaced-comment": [
+			"error",
+			"always"
+		],
+		"strict": [
+			"error",
+			"safe"
+		],
+		"valid-jsdoc": [
+			"warn",
+			{
+				"requireReturn": false
+			}
+		]
+	}
 }

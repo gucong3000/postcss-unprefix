@@ -1,0 +1,17 @@
+a {
+	border-radius: 5px;
+	border-top-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+b {
+	border-top-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-radius: 5px;
+}
+
+c {
+	border-radius: 5px;
+	border-top-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+}

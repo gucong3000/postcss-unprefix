@@ -5,6 +5,7 @@
   },
   "dependencies": {
     "autoprefixer": "^7.0.1",
+    "known-css-properties": "^0.1.0",
     "normalize-range": "^0.1.2",
     "postcss": "^6.0.1",
     "postcss-value-parser": "^3.3.0"
@@ -12,11 +13,16 @@
   "description": "Unprefixes vendor prefixes in legacy CSS.",
   "devDependencies": {
     "cover": "^0.2.9",
-    "coveralls": "^2.11.15",
-    "eslint": "^3.14.1",
-    "istanbul": "^0.4.5",
-    "mocha": "^3.2.0",
-    "node-version-check": "^2.1.1"
+    "coveralls": "^2.13.1",
+    "eslint": "^3.19.0",
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-stylefmt": "^1.1.0",
+    "mocha": "^3.3.0",
+    "nyc": "^10.3.2",
+    "postcss-less": "^0.16.1",
+    "postcss-reporter": "^3.0.0",
+    "stylelint": "^7.10.1"
   },
   "homepage": "https://github.com/gucong3000/postcss-unprefix#readme",
   "keywords": [
@@ -30,15 +36,31 @@
   "license": "MIT",
   "main": "./lib/index",
   "name": "postcss-unprefix",
+  "nyc": {
+    "lines": 99,
+    "statements": 99,
+    "functions": 100,
+    "branches": 99,
+    "include": [
+      "lib/**/*.js"
+    ],
+    "reporter": [
+      "lcov",
+      "text"
+    ],
+    "cache": true,
+    "all": true,
+    "check-coverage": true
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gucong3000/postcss-unprefix.git"
   },
   "scripts": {
     "coveralls": "npm run test-cov && coveralls < coverage/lcov.info",
-    "lint": "node-version-gte-4 && eslint . || echo \"ESLint not supported\"",
-    "test": "npm run lint && mocha",
-    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha"
+    "test-cov": "nyc npm test",
+    "pretest": "eslint .",
+    "test": "mocha --no-timeouts"
   },
-  "version": "1.2.0"
+  "version": "2.0.0"
 }

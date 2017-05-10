@@ -1,4 +1,60 @@
 .a {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: auto 1fr;
+	grid-template-columns: auto 1fr;
+	-ms-grid-column-align: stretch;
+	justify-items: stretch;
+	-ms-grid-row-align: stretch;
+	align-self: stretch;
+	-ms-grid-column: 1;
+	grid-column-start: 1;
+	grid-column-end: span 3;
+}
+
+.b {
+	display: -ms-inline-grid;
+	display: inline-grid;
+	-ms-grid-rows: 10px (250px 10px)[4] 20px;
+	grid-template-rows: 10px repeat(4, 250px 10px) 20px;
+	-ms-grid-row-align: stretch;
+	align-self: stretch;
+	-ms-grid-row: 1;
+	grid-row-start: 1;
+	grid-row-end: span 3;
+}
+
+.c {
+	-ms-grid-column: 1;
+	grid-column: 1 / span 3;
+}
+
+.webkit {
+	grid: subgrid;
+	grid-template-areas: "head head" "nav main" "foot ....";
+}
+
+.unknown {
+	-webkit-align-self: start;
+	-ms-flex-item-align: start;
+	-ms-grid-row-align: start;
+	align-self: start;
+}
+
+.flex {
+	-webkit-align-self: flex-end;
+	-ms-flex-item-align: end;
+	align-self: flex-end;
+}
+
+@supports ((display: -ms-grid) or (display: grid)) {
+	.foo {
+		display: -ms-grid;
+		display: grid;
+	}
+}
+
+.a {
 	-webkit-grid-template-columns: auto 1fr;
 	-ms-grid-columns: auto 1fr;
 	-ms-grid-column-align: stretch;
@@ -27,13 +83,12 @@
 
 .webkit {
 	-webkit-grid: subgrid;
-	grid-template-areas: "head head"
-	"nav  main"
-	"foot ....";
+	grid-template-areas: "head head" "nav main" "foot ....";
 }
 
 .unknown {
 	-webkit-align-items: start;
 	-ms-flex-align: start;
 	-ms-grid-row-align: start;
+	-ms-grid-row-unknown: unknown;
 }
