@@ -60,7 +60,7 @@
     "coveralls": "npm run test-cov && coveralls < coverage/lcov.info",
     "test-cov": "nyc npm test",
     "pretest": "eslint .",
-    "test": "mocha"
+    "test": "mocha --no-timeouts"
   },
   "version": "2.0.0"
 }
