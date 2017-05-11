@@ -11,6 +11,7 @@
 .stylelintrc*
 .travis.yml
 .vscode
+.nyc_output
 appveyor.yml
 coverage
 gulpfile.js
