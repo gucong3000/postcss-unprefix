@@ -41,3 +41,11 @@ p::-moz-selection {
 	color: white;
 	background: black;
 }
+
+input:-moz-placeholder, input::placeholder {
+	color: pink;
+}
+
+a[data-foo=":-webkit-full-screen"] {
+
+}
