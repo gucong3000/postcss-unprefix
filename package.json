@@ -21,7 +21,7 @@
     "gulp": "^3.9.1",
     "gulp-rename": "^1.2.2",
     "gulp-stylefmt": "^1.1.0",
-    "mocha": "^3.3.0",
+    "mocha": "^3.4.1",
     "nyc": "^10.3.2",
     "postcss-less": "^0.16.1",
     "postcss-reporter": "^3.0.0",
