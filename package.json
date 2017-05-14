@@ -8,7 +8,10 @@
     "known-css-properties": "^0.1.0",
     "normalize-range": "^0.1.2",
     "postcss": "^6.0.1",
-    "postcss-value-parser": "^3.3.0"
+    "postcss-selector-parser": "^2.2.3",
+    "postcss-value-parser": "^3.3.0",
+    "pseudo-classes": "^1.0.0",
+    "pseudo-elements": "^1.0.0"
   },
   "description": "Unprefixes vendor prefixes in legacy CSS.",
   "devDependencies": {
@@ -63,5 +66,5 @@
     "pretest": "eslint .",
     "test": "mocha --no-timeouts"
   },
-  "version": "2.0.1"
+  "version": "2.1.0"
 }
