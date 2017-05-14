@@ -27,3 +27,6 @@ input::placeholder {
 a[data-foo=":-webkit-full-screen"] {
 
 }
+
+.class::-webkit-scrollbar {
+}
