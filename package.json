@@ -66,5 +66,5 @@
     "pretest": "eslint .",
     "test": "mocha --no-timeouts"
   },
-  "version": "2.1.0"
+  "version": "2.1.1"
 }

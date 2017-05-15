@@ -5,11 +5,12 @@ const fs = require('fs');
 const assert = require('assert');
 const stylelint = require('stylelint');
 const reporter = require('postcss-reporter');
+const unprefix = require('..');
 
 function process (css, postcssOpts, opts) {
 	const postcss = require('postcss');
 	const processors = [
-		require('..')(opts),
+		unprefix(opts),
 		stylelint,
 		reporter(),
 	];
