@@ -11,7 +11,7 @@
     "postcss-selector-parser": "^2.2.3",
     "postcss-value-parser": "^3.3.0",
     "pseudo-classes": "^1.0.0",
-    "pseudo-elements": "^1.0.0"
+    "pseudo-elements": "^1.1.0"
   },
   "description": "Unprefixes vendor prefixes in legacy CSS.",
   "devDependencies": {
