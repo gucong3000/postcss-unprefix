@@ -23,7 +23,7 @@
     "gulp-stylefmt": "^1.1.0",
     "mocha": "^3.4.1",
     "nyc": "^10.3.2",
-    "postcss-less": "^0.16.1",
+    "postcss-less": "^1.0.0",
     "postcss-reporter": "^3.0.0",
     "postcss-selector-parser": "^2.2.3",
     "stylelint": "^7.10.1"
