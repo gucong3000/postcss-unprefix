@@ -22,7 +22,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-stylefmt": "^1.1.0",
     "mocha": "^3.4.1",
-    "nyc": "^11.0.0",
+    "nyc": "^11.0.1",
     "postcss-less": "^1.0.0",
     "postcss-reporter": "^3.0.0",
     "postcss-selector-parser": "^2.2.3",
