@@ -22,7 +22,7 @@ npm install --save postcss-unprefix
 
 ```javascript
 var postcss = require("gulp-postcss");
-var unprefix = require("unprefix");
+var unprefix = require("postcss-unprefix");
 var autoprefixer = require("autoprefixer");
 
 gulp.task("clear-css", function () {
