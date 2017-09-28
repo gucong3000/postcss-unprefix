@@ -16,7 +16,7 @@
   "description": "Unprefixes vendor prefixes in legacy CSS.",
   "devDependencies": {
     "cover": "^0.2.9",
-    "coveralls": "^2.13.1",
+    "coveralls": "^3.0.0",
     "eslint": "^4.0.0",
     "gulp": "^3.9.1",
     "gulp-rename": "^1.2.2",
