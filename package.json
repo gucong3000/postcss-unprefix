@@ -15,8 +15,7 @@
   },
   "description": "Unprefixes vendor prefixes in legacy CSS.",
   "devDependencies": {
-    "cover": "^0.2.9",
-    "coveralls": "^3.0.0",
+    "codecov": "^3.0.0",
     "eslint": "^4.0.0",
     "gulp": "^3.9.1",
     "gulp-rename": "^1.2.2",
@@ -61,10 +60,9 @@
     "url": "git+https://github.com/gucong3000/postcss-unprefix.git"
   },
   "scripts": {
-    "coveralls": "npm run test-cov && coveralls < coverage/lcov.info",
-    "test-cov": "nyc npm test",
+    "report-coverage": "codecov",
     "pretest": "eslint .",
-    "test": "mocha --no-timeouts"
+    "test": "nyc mocha --no-timeouts"
   },
   "version": "2.1.1"
 }
