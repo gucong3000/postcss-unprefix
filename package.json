@@ -8,7 +8,7 @@
     "known-css-properties": "^0.4.0",
     "normalize-range": "^0.1.2",
     "postcss": "^6.0.2",
-    "postcss-selector-parser": "^2.2.3",
+    "postcss-selector-parser": "^3.0.0",
     "postcss-value-parser": "^3.3.0",
     "pseudo-classes": "^1.0.0",
     "pseudo-elements": "^1.1.0"
@@ -24,7 +24,6 @@
     "nyc": "^11.0.2",
     "postcss-less": "^1.0.2",
     "postcss-reporter": "^5.0.0",
-    "postcss-selector-parser": "^2.2.3",
     "stylelint": "^8.0.0"
   },
   "homepage": "https://github.com/gucong3000/postcss-unprefix#readme",
