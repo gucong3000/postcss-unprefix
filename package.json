@@ -22,9 +22,6 @@
     "eslint-plugin-node": "^5.2.1",
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-standard": "^3.0.1",
-    "gulp": "^3.9.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-stylefmt": "^1.1.0",
     "mocha": "^5.0.0",
     "nyc": "^11.4.1",
     "postcss-less": "^1.1.3",
@@ -68,5 +65,5 @@
     "pretest": "eslint .",
     "test": "nyc mocha --no-timeouts"
   },
-  "version": "2.1.1"
+  "version": "2.1.2"
 }
