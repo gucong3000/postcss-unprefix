@@ -5,89 +5,24 @@
 		"node": true
 	},
 	"extends": [
-		"eslint:recommended"
+		"standard"
 	],
 	"root": true,
 	"rules": {
-		"arrow-spacing": [
-			"error",
-			{
-				"after": true,
-				"before": true
-			}
-		],
-		"comma-spacing": [
-			"error",
-			{
-				"after": true,
-				"before": false
-			}
-		],
 		"comma-dangle": [
 			"error",
 			"always-multiline"
 		],
-		"eqeqeq": [
-			"error",
-			"smart"
-		],
 		"indent": [
 			"error",
-			"tab",
-			{
-				"SwitchCase": 1
-			}
+			"tab"
 		],
-		"key-spacing": [
-			"error"
-		],
-		"keyword-spacing": [
-			"error"
-		],
-		"no-var": [
-			"error"
-		],
-		"no-console": [
-			"error",
-			{
-				"allow": [
-					"warn",
-					"error"
-				]
-			}
-		],
-		"prefer-const": [
-			"error"
-		],
-		"quotes": [
-			"error",
-			"single"
+		"no-tabs": [
+			"off"
 		],
 		"semi": [
-			"error"
-		],
-		"space-before-function-paren": [
-			"error"
-		],
-		"space-before-blocks": [
-			"error"
-		],
-		"space-infix-ops": [
-			"error"
-		],
-		"spaced-comment": [
 			"error",
 			"always"
-		],
-		"strict": [
-			"error",
-			"safe"
-		],
-		"valid-jsdoc": [
-			"warn",
-			{
-				"requireReturn": false
-			}
 		]
 	}
 }
