@@ -62,7 +62,7 @@
   },
   "scripts": {
     "report-coverage": "codecov",
-    "pretest": "eslint .",
+    "pretest": "eslint lib test",
     "test": "nyc mocha --no-timeouts"
   },
   "version": "2.1.2"

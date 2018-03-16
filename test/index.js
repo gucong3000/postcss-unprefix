@@ -23,11 +23,9 @@ files = files.filter(function (filename) {
 	return /\.(?:c|le|sc)ss$/.test(filename) && !/\.\w+\.\w+$/.test(filename);
 });
 describe('fixtures', function () {
-
 	// files = ["values.css"]
 
 	files.forEach(function (filename) {
-
 		const testName = filename.replace(/\.\w+$/, '');
 		const inputFile = './test/fixtures/' + filename;
 		const outputFile = inputFile.replace(/\.(\w+)$/, '.out.$1');
@@ -48,7 +46,7 @@ describe('fixtures', function () {
 			let real;
 			return process(input, {
 				from: inputFile,
-				syntax: syntax === 'css' ? null : require('postcss-'+ syntax),
+				syntax: syntax === 'css' ? null : require('postcss-' + syntax),
 			}).then((result) => {
 				real = result.css;
 				assert.equal(output, real);
