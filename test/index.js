@@ -19,13 +19,13 @@ function process (css, postcssOpts, opts) {
 
 let files = fs.readdirSync('./test/fixtures');
 
-files = files.filter(function (filename) {
+files = files.filter((filename) => {
 	return /\.(?:c|le|sc)ss$/.test(filename) && !/\.\w+\.\w+$/.test(filename);
 });
-describe('fixtures', function () {
+describe('fixtures', () => {
 	// files = ["values.css"]
 
-	files.forEach(function (filename) {
+	files.forEach((filename) => {
 		const testName = filename.replace(/\.\w+$/, '');
 		const inputFile = './test/fixtures/' + filename;
 		const outputFile = inputFile.replace(/\.(\w+)$/, '.out.$1');
@@ -42,7 +42,7 @@ describe('fixtures', function () {
 			console.error(inputFile);
 		}
 
-		it(testName, function () {
+		it(testName, () => {
 			let real;
 			return process(input, {
 				from: inputFile,
