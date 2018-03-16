@@ -7,6 +7,7 @@ Unprefixes vendor prefixes in legacy CSS.
 [![Travis](https://img.shields.io/travis/gucong3000/postcss-unprefix.svg?&label=Linux)](https://travis-ci.org/gucong3000/postcss-unprefix)
 [![AppVeyor](https://img.shields.io/appveyor/ci/gucong3000/postcss-unprefix.svg?&label=Windows)](https://ci.appveyor.com/project/gucong3000/postcss-unprefix)
 [![Codecov](https://img.shields.io/codecov/c/github/gucong3000/postcss-unprefix.svg)](https://codecov.io/gh/gucong3000/postcss-unprefix)
+[![David](https://img.shields.io/david/gucong3000/postcss-unprefix.svg)](https://david-dm.org/gucong3000/postcss-unprefix)
 
 Though, please use [`autoprefixer`](https://github.com/postcss/autoprefixer) as part of your build process to ensure proper browser support.
 
@@ -21,7 +22,7 @@ npm install --save postcss-unprefix
 ## Usage
 
 ```javascript
-var postcss = require("gulp-postcss");
+var postcss = require("gulp-html-postcss");
 var unprefix = require("postcss-unprefix");
 var autoprefixer = require("autoprefixer");
 
