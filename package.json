@@ -22,7 +22,7 @@
     "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-promise": "^3.7.0",
     "eslint-plugin-standard": "^3.0.1",
-    "mocha": "^5.0.4",
+    "mocha": "^5.1.0",
     "nyc": "^11.6.0",
     "postcss-less": "^1.1.3",
     "postcss-reporter": "^5.0.0",
