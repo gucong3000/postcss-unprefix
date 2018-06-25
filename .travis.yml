@@ -2,8 +2,8 @@ dist: trusty
 sudo: false
 language: node_js
 node_js:
-  - stable
-  - 4
+  - "stable"
+  - "--lts"
 
 after_script:
   - npm run report-coverage
