@@ -47,8 +47,8 @@ describe("fixtures", () => {
 				syntax: syntax === "css" ? null : require("postcss-" + syntax),
 			}).then((result) => {
 				real = result.css;
-				assert.equal(output, real);
-				assert.equal(result.messages.length, 0);
+				assert.strictEqual(output, real);
+				assert.strictEqual(result.messages.length, 0);
 			}).catch(ex => {
 				if (real) {
 					fs.writeFileSync(inputFile.replace(/\.(\w+)$/, ".out.$1"), real);
