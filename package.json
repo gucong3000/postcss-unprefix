@@ -28,7 +28,7 @@
     "nyc": "^12.0.2",
     "postcss": "^7.0.1",
     "postcss-less": "^2.0.0",
-    "postcss-reporter": "^5.0.0",
+    "postcss-reporter": "^6.0.0",
     "stylelint": "^9.3.0"
   },
   "homepage": "https://github.com/gucong3000/postcss-unprefix#readme",
