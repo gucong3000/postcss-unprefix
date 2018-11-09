@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "autoprefixer": "^9.0.0",
-    "known-css-properties": "^0.9.0",
+    "known-css-properties": "^0.10.0",
     "normalize-range": "^0.1.2",
     "postcss-selector-parser": "^4.0.0",
     "postcss-value-parser": "^3.3.0",
