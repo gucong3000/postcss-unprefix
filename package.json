@@ -27,7 +27,7 @@
     "mocha": "^5.2.0",
     "nyc": "^13.1.0",
     "postcss": "^7.0.7",
-    "postcss-less": "^3.1.0",
+    "postcss-less": "3.1.1",
     "postcss-reporter": "^6.0.1",
     "stylelint": "^9.9.0"
   },
