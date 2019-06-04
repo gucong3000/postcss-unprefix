@@ -11,7 +11,7 @@
     "known-css-properties": "^0.11.0",
     "normalize-range": "^0.1.2",
     "postcss-selector-parser": "^5.0.0",
-    "postcss-value-parser": "^3.3.1",
+    "postcss-value-parser": "^4.0.0",
     "pseudo-classes": "^1.0.0",
     "pseudo-elements": "^1.1.0"
   },
