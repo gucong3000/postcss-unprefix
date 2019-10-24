@@ -7,7 +7,7 @@
     "postcss": ">=5.0.0"
   },
   "dependencies": {
-    "autoprefixer": "^9.4.3",
+    "autoprefixer": "^9.7.0",
     "known-css-properties": "^0.11.0",
     "normalize-range": "^0.1.2",
     "postcss-selector-parser": "^5.0.0",
